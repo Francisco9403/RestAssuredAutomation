@@ -57,7 +57,7 @@ The suite covers **7 robust scenarios** across different API capabilities:
     mvn allure:serve
     ```
 ## 📊 Test Report
-[View Latest Execution Report](AQUI_TU_LINK_DE_GITHUB_PAGES)
+[View Latest Execution Report](https://francisco9403.github.io/RestAssuredAutomation/)
 
 ## cw Project Structure
 
