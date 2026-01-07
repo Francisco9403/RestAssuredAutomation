@@ -34,4 +34,14 @@ public class UsersTest extends BaseTest {
                 .body("username", equalTo("Bret"))
                 .body("email", equalTo("Sincere@april.biz"));
     }
+    @Test(description = "Usuario no encontrado (404)")
+    @Severity(SeverityLevel.NORMAL)
+    public void userNotFoundTest() {
+        given()
+                .when()
+                .get("/users/99999") // Un ID que seguro no existe
+                .then()
+                .statusCode(404); // Esperamos "Not Found"
+    }
+
 }
