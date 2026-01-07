@@ -56,6 +56,8 @@ The suite covers **7 robust scenarios** across different API capabilities:
     ```bash
     mvn allure:serve
     ```
+## 📊 Test Report
+[View Latest Execution Report](AQUI_TU_LINK_DE_GITHUB_PAGES)
 
 ## cw Project Structure
 
