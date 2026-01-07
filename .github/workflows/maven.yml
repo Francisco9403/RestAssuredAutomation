@@ -20,5 +20,9 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
+      - name: Resolve Dependencies
+        run: mvn dependency:resolve
+
+      # PASO 2: Correr los tests
       - name: Run Tests with Maven
-        run: mvn clean test
+        run: mvn test
