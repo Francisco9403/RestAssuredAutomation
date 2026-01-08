@@ -1,0 +1,1805 @@
+dows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\usuario\Desktop\ProyectosPortafolio\ReqResApiAutomation> docker-compose up --build
+time="2026-01-08T10:54:17-03:00" level=warning msg="C:\\Users\\usuario\\Desktop\\ProyectosPortafolio\\ReqResApiAutomation\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+error during connect: Get "http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.47/containers/json?all=1&filters=%7B%22label%22%3A%7B%22com.docker.compose.config-hash%22%3Atrue%2C%22com.docker.compose.project%3Dreqresapiautomation%22%3Atrue%7D%7D": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.
+PS C:\Users\usuario\Desktop\ProyectosPortafolio\ReqResApiAutomation> docker-compose up --build
+time="2026-01-08T10:58:30-03:00" level=warning msg="C:\\Users\\usuario\\Desktop\\ProyectosPortafolio\\ReqResApiAutomation\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+[+] Building 121.1s (12/12) FINISHED                                                                                                                                       docker:desktop-linux
+ => [api-tests internal] load build definition from Dockerfile                                                                                                                             1.3s
+ => => transferring dockerfile: 1.02kB                                                                                                                                                     0.0s
+ => [api-tests internal] load metadata for docker.io/library/maven:3.9.5-eclipse-temurin-17-alpine                                                                                         4.3s
+ => [api-tests internal] load .dockerignore                                                                                                                                                0.9s
+ => => transferring context: 2B                                                                                                                                                            0.0s
+ => [api-tests 1/6] FROM docker.io/library/maven:3.9.5-eclipse-temurin-17-alpine@sha256:a30f71650b13e5dd376afa423fdf0996e0a8d548cfd1e05e6114ea114c8a3cf5                                  27.1s
+ => => resolve docker.io/library/maven:3.9.5-eclipse-temurin-17-alpine@sha256:a30f71650b13e5dd376afa423fdf0996e0a8d548cfd1e05e6114ea114c8a3cf5                                             0.9s
+ => => sha256:c36f72c09274fa94a6a6477b81414b68fcdd1f663815259d0481b9bbd5fcd659 164B / 164B                                                                                                 2.1s
+ => => sha256:c8e9e09a8b7a3ed380e0d38c15cff5d4520d102183a63767129ec4a446a4cad9 355B / 355B                                                                                                 2.1s
+ => => sha256:626d0e62320fc1402314fdcd61e72b2688a0cad9515ed245da01655528efd8a4 857B / 857B                                                                                                 2.1s
+ => => sha256:d2e0b9234ca376f695b2466edbca8628f0efdcb125680b5c453002bdea3627cc 9.43MB / 9.43MB                                                                                             2.2s
+ => => sha256:94bb561620243b88baedb9d321e50bfd5987ee29c6f6c1934a91ae2f8958bac8 1.85MB / 1.85MB                                                                                             1.1s
+ => => sha256:64f3195d8bdd8ee99ecf37259027c679b512a94c32c26bc7e461556da58f8d99 734B / 734B                                                                                                 1.0s
+ => => sha256:bb67c9837c6a071b2db6278557e6372b3cd1049dbf05b46970ebcd3462a542a2 175B / 175B                                                                                                 1.3s
+ => => sha256:ec533064323b9596a959f12635ca06c4ee0965ca1b44257c3e65fca566a63512 144.11MB / 144.11MB                                                                                         8.0s
+ => => sha256:e5820a814e8c90e2b86457ad1da29a79516ae242489d7bf67ea216d150c1efdc 13.14MB / 13.14MB                                                                                           2.8s
+ => => sha256:c926b61bad3b94ae7351bafd0c184c159ebf0643b085f7ef1d47ecdc7316833c 3.40MB / 3.40MB                                                                                             1.7s
+ => => extracting sha256:c926b61bad3b94ae7351bafd0c184c159ebf0643b085f7ef1d47ecdc7316833c                                                                                                  1.1s
+ => => extracting sha256:e5820a814e8c90e2b86457ad1da29a79516ae242489d7bf67ea216d150c1efdc                                                                                                  3.0s
+ => => extracting sha256:ec533064323b9596a959f12635ca06c4ee0965ca1b44257c3e65fca566a63512                                                                                                  2.5s
+ => => extracting sha256:bb67c9837c6a071b2db6278557e6372b3cd1049dbf05b46970ebcd3462a542a2                                                                                                  0.9s
+ => => extracting sha256:64f3195d8bdd8ee99ecf37259027c679b512a94c32c26bc7e461556da58f8d99                                                                                                  0.8s
+ => => extracting sha256:94bb561620243b88baedb9d321e50bfd5987ee29c6f6c1934a91ae2f8958bac8                                                                                                  0.8s
+ => => extracting sha256:d2e0b9234ca376f695b2466edbca8628f0efdcb125680b5c453002bdea3627cc                                                                                                  0.9s
+ => => extracting sha256:626d0e62320fc1402314fdcd61e72b2688a0cad9515ed245da01655528efd8a4                                                                                                  0.9s
+ => => extracting sha256:c8e9e09a8b7a3ed380e0d38c15cff5d4520d102183a63767129ec4a446a4cad9                                                                                                  0.9s
+ => => extracting sha256:c36f72c09274fa94a6a6477b81414b68fcdd1f663815259d0481b9bbd5fcd659                                                                                                  0.4s
+ => [api-tests internal] load build context                                                                                                                                                1.8s
+ => => transferring context: 11.53kB                                                                                                                                                       0.1s
+ => [api-tests 2/6] WORKDIR /app                                                                                                                                                           4.1s
+ => [api-tests 3/6] COPY pom.xml .                                                                                                                                                         1.3s
+ => [api-tests 4/6] RUN mvn dependency:resolve                                                                                                                                            25.7s
+ => [api-tests 5/6] RUN mvn dependency:go-offline                                                                                                                                         35.6s
+ => [api-tests 6/6] COPY src ./src                                                                                                                                                         2.5s
+ => [api-tests] exporting to image                                                                                                                                                        14.6s
+ => => exporting layers                                                                                                                                                                    8.6s
+ => => exporting manifest sha256:f51064ae746aea4b2fe86d62da76aa1851b7619e74fe0b39e5266ca04e39be54                                                                                          0.5s
+ => => exporting config sha256:124aaa6fdd0545062262a50eb943b8e5cdb1952a33adbaabfbaa850f932d4285                                                                                            0.5s
+ => => exporting attestation manifest sha256:77e3e9ff1fae887a26ff97c52aba129f015626b3432c5aaee13e8ef6fbb45960                                                                              0.9s
+ => => exporting manifest list sha256:49fb3d6d98bdc1570ea43f07d8e2c04383e8aa56b2a2a6dc3dddba0d12b2b54f                                                                                     0.4s
+ => => naming to docker.io/library/reqresapiautomation-api-tests:latest                                                                                                                    0.1s
+ => => unpacking to docker.io/library/reqresapiautomation-api-tests:latest                                                                                                                 3.2s
+ => [api-tests] resolving provenance for metadata file                                                                                                                                     0.0s
+[+] Running 2/2
+ ✔ Network reqresapiautomation_default  Created                                                                                                                                            0.4s
+ ✔ Container rest-assured-runner        Created                                                                                                                                            4.9s
+Attaching to rest-assured-runner
+rest-assured-runner  | [INFO] Scanning for projects...
+rest-assured-runner  | [INFO]
+rest-assured-runner  | [INFO] -----------------< com.francisco:ReqResApiAutomation >------------------
+rest-assured-runner  | [INFO] Building ReqResApiAutomation 1.0-SNAPSHOT
+rest-assured-runner  | [INFO]   from pom.xml
+rest-assured-runner  | [INFO] --------------------------------[ jar ]---------------------------------
+rest-assured-runner  | [INFO]
+rest-assured-runner  | [INFO] --- clean:3.2.0:clean (default-clean) @ ReqResApiAutomation ---
+rest-assured-runner  | [INFO] Deleting /app/target
+rest-assured-runner  | [INFO] ------------------------------------------------------------------------
+rest-assured-runner  | [INFO] BUILD FAILURE
+rest-assured-runner  | [INFO] ------------------------------------------------------------------------
+rest-assured-runner  | [INFO] Total time:  1.787 s
+rest-assured-runner  | [INFO] Finished at: 2026-01-08T14:00:45Z
+rest-assured-runner  | [INFO] ------------------------------------------------------------------------
+rest-assured-runner  | [ERROR] Failed to execute goal org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean (default-clean) on project ReqResApiAutomation: Failed to clean project: Failed to delete /app/target/site/allure-maven-plugin -> [Help 1]
+rest-assured-runner  | [ERROR]
+rest-assured-runner  | [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+rest-assured-runner  | [ERROR] Re-run Maven using the -X switch to enable full debug logging.
+rest-assured-runner  | [ERROR]
+rest-assured-runner  | [ERROR] For more information about the errors and possible solutions, please read the following articles:
+rest-assured-runner  | [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+rest-assured-runner exited with code 1
+PS C:\Users\usuario\Desktop\ProyectosPortafolio\ReqResApiAutomation> docker-compose up --build
+time="2026-01-08T11:02:36-03:00" level=warning msg="C:\\Users\\usuario\\Desktop\\ProyectosPortafolio\\ReqResApiAutomation\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+[+] Building 7.6s (12/12) FINISHED                                                                                                                                         docker:desktop-linux
+ => [api-tests internal] load build definition from Dockerfile                                                                                                                             0.3s
+ => => transferring dockerfile: 1.01kB                                                                                                                                                     0.0s
+ => [api-tests internal] load metadata for docker.io/library/maven:3.9.5-eclipse-temurin-17-alpine                                                                                         1.4s
+ => [api-tests internal] load .dockerignore                                                                                                                                                0.3s
+ => => transferring context: 2B                                                                                                                                                            0.0s
+ => [api-tests 1/6] FROM docker.io/library/maven:3.9.5-eclipse-temurin-17-alpine@sha256:a30f71650b13e5dd376afa423fdf0996e0a8d548cfd1e05e6114ea114c8a3cf5                                   0.8s
+ => => resolve docker.io/library/maven:3.9.5-eclipse-temurin-17-alpine@sha256:a30f71650b13e5dd376afa423fdf0996e0a8d548cfd1e05e6114ea114c8a3cf5                                             0.7s
+ => [api-tests internal] load build context                                                                                                                                                0.5s
+ => => transferring context: 719B                                                                                                                                                          0.0s
+ => CACHED [api-tests 2/6] WORKDIR /app                                                                                                                                                    0.0s
+ => CACHED [api-tests 3/6] COPY pom.xml .                                                                                                                                                  0.0s
+ => CACHED [api-tests 4/6] RUN mvn dependency:resolve                                                                                                                                      0.0s
+ => CACHED [api-tests 5/6] RUN mvn dependency:go-offline                                                                                                                                   0.0s
+ => CACHED [api-tests 6/6] COPY src ./src                                                                                                                                                  0.0s
+ => [api-tests] exporting to image                                                                                                                                                         2.3s
+ => => exporting layers                                                                                                                                                                    0.0s
+ => => exporting manifest sha256:53c287191076508f4840b531643a50160f55f57ca3c49217986404b8ca7cf0b9                                                                                          0.4s
+ => => exporting config sha256:dfe4ad171cf2b282777692d0f09e233490bf9178c55d657a82e8940d1fd05d54                                                                                            0.3s
+ => => exporting attestation manifest sha256:a34171159bae0524e88ca29e77ff8d2fb758f816acef8c57a890e346ecbe2f88                                                                              0.7s
+ => => exporting manifest list sha256:924bdf6e95bcb096604a944dec9a31ff41548d136ea41bb9383c7700fd7c1152                                                                                     0.4s
+ => => naming to docker.io/library/reqresapiautomation-api-tests:latest                                                                                                                    0.1s
+ => => unpacking to docker.io/library/reqresapiautomation-api-tests:latest                                                                                                                 0.1s
+ => [api-tests] resolving provenance for metadata file                                                                                                                                     0.0s
+[+] Running 1/1
+ ✔ Container rest-assured-runner  Recreated                                                                                                                                                2.2s
+Attaching to rest-assured-runner
+rest-assured-runner  | [INFO] Scanning for projects...
+rest-assured-runner  | [INFO]
+rest-assured-runner  | [INFO] -----------------< com.francisco:ReqResApiAutomation >------------------
+rest-assured-runner  | [INFO] Building ReqResApiAutomation 1.0-SNAPSHOT
+rest-assured-runner  | [INFO]   from pom.xml
+rest-assured-runner  | [INFO] --------------------------------[ jar ]---------------------------------
+rest-assured-runner  | [INFO]
+rest-assured-runner  | [INFO] --- resources:3.3.1:resources (default-resources) @ ReqResApiAutomation ---
+rest-assured-runner  | [INFO] Copying 0 resource from src/main/resources to target/classes
+rest-assured-runner  | [INFO]
+rest-assured-runner  | [INFO] --- compiler:3.13.0:compile (default-compile) @ ReqResApiAutomation ---
+rest-assured-runner  | [INFO] Recompiling the module because of changed source code.
+rest-assured-runner  | [INFO] Compiling 1 source file with javac [debug target 17] to target/classes
+rest-assured-runner  | [INFO]
+rest-assured-runner  | [INFO] --- resources:3.3.1:testResources (default-testResources) @ ReqResApiAutomation ---
+rest-assured-runner  | [INFO] Copying 1 resource from src/test/resources to target/test-classes
+rest-assured-runner  | [INFO]
+rest-assured-runner  | [INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ ReqResApiAutomation ---
+rest-assured-runner  | [INFO] Recompiling the module because of changed dependency.
+rest-assured-runner  | [INFO] Compiling 5 source files with javac [debug target 17] to target/test-classes
+rest-assured-runner  | [INFO]
+rest-assured-runner  | [INFO] --- dependency:3.6.0:copy (copy-javaagent) @ ReqResApiAutomation ---
+rest-assured-runner  | [INFO] Configured Artifact: org.aspectj:aspectjweaver:1.9.20.1:jar
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.9.20.1/aspectjweaver-1.9.20.1.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.9.20.1/aspectjweaver-1.9.20.1.pom (2.1 kB at 3.5 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.9.20.1/aspectjweaver-1.9.20.1.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.9.20.1/aspectjweaver-1.9.20.1.jar (2.1 MB at 5.8 MB/s)
+rest-assured-runner  | [INFO] Copying aspectjweaver-1.9.20.1.jar to /app/target/aspectjweaver.jar
+rest-assured-runner  | [INFO]
+rest-assured-runner  | [INFO] --- surefire:3.2.3:test (default-test) @ ReqResApiAutomation ---
+rest-assured-runner  | [INFO] Using auto detected provider org.apache.maven.surefire.testng.TestNGProvider
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/3.2.3/surefire-testng-3.2.3.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/3.2.3/surefire-testng-3.2.3.pom (3.6 kB at 51 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.2.3/surefire-providers-3.2.3.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.2.3/surefire-providers-3.2.3.pom (2.6 kB at 44 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.2.3/common-java5-3.2.3.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.2.3/common-java5-3.2.3.pom (2.8 kB at 47 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/3.2.3/surefire-testng-utils-3.2.3.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/3.2.3/surefire-testng-utils-3.2.3.pom (3.2 kB at 39 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/3.2.3/surefire-grouper-3.2.3.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/3.2.3/surefire-grouper-3.2.3.pom (3.4 kB at 52 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/3.2.3/surefire-testng-3.2.3.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/3.2.3/surefire-testng-3.2.3.jar (47 kB at 663 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.2.3/common-java5-3.2.3.jar
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/3.2.3/surefire-testng-utils-3.2.3.jar
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/3.2.3/surefire-grouper-3.2.3.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.2.3/common-java5-3.2.3.jar (18 kB at 308 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/3.2.3/surefire-testng-utils-3.2.3.jar (14 kB at 91 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/3.2.3/surefire-grouper-3.2.3.jar (40 kB at 217 kB/s)
+rest-assured-runner  | [INFO]
+rest-assured-runner  | [INFO] -------------------------------------------------------
+rest-assured-runner  | [INFO]  T E S T S
+rest-assured-runner  | [INFO] -------------------------------------------------------
+rest-assured-runner  | [INFO] Running TestSuite
+rest-assured-runner  | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+rest-assured-runner  | SLF4J: Defaulting to no-operation (NOP) logger implementation
+rest-assured-runner  | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+rest-assured-runner  | Request method:  GET
+rest-assured-runner  | Request URI:     https://jsonplaceholder.typicode.com/posts?userId=1
+rest-assured-runner  | Proxy:                   <none>
+rest-assured-runner  | Request params:  <none>
+rest-assured-runner  | Query params:    userId=1
+rest-assured-runner  | Form params:     <none>
+rest-assured-runner  | Path params:     <none>
+rest-assured-runner  | Headers:         Accept=*/*
+rest-assured-runner  |                          Content-Type=application/json
+rest-assured-runner  | Cookies:         <none>
+rest-assured-runner  | Multiparts:              <none>
+rest-assured-runner  | Body:                    <none>
+rest-assured-runner  | HTTP/1.1 200 OK
+rest-assured-runner  | Date: Thu, 08 Jan 2026 14:03:04 GMT
+rest-assured-runner  | Content-Type: application/json; charset=utf-8
+rest-assured-runner  | Content-Length: 1002
+rest-assured-runner  | Connection: keep-alive
+rest-assured-runner  | access-control-allow-credentials: true
+rest-assured-runner  | Cache-Control: max-age=43200
+rest-assured-runner  | Content-Encoding: gzip
+rest-assured-runner  | etag: W/"aa6-j2NSH739l9uq40OywFMn7Y0C/iY"
+rest-assured-runner  | expires: -1
+rest-assured-runner  | nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+rest-assured-runner  | pragma: no-cache
+rest-assured-runner  | report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=pyT0cZNCnvWFtC72gfAzrhs4F766JoDgGAFq6UMahIA%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1766524839"}],"max_age":3600}
+rest-assured-runner  | reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=pyT0cZNCnvWFtC72gfAzrhs4F766JoDgGAFq6UMahIA%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1766524839"
+rest-assured-runner  | Server: cloudflare
+rest-assured-runner  | vary: Origin, Accept-Encoding
+rest-assured-runner  | via: 2.0 heroku-router
+rest-assured-runner  | x-content-type-options: nosniff
+rest-assured-runner  | x-powered-by: Express
+rest-assured-runner  | x-ratelimit-limit: 1000
+rest-assured-runner  | x-ratelimit-remaining: 999
+rest-assured-runner  | x-ratelimit-reset: 1766524869
+rest-assured-runner  | Age: 466
+rest-assured-runner  | Accept-Ranges: bytes
+rest-assured-runner  | cf-cache-status: HIT
+rest-assured-runner  | CF-RAY: 9bac3c7b3c782014-EZE
+rest-assured-runner  | alt-svc: h3=":443"; ma=86400
+rest-assured-runner  |
+rest-assured-runner  | [
+rest-assured-runner  |     {
+rest-assured-runner  |         "userId": 1,
+rest-assured-runner  |         "id": 1,
+rest-assured-runner  |         "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+rest-assured-runner  |         "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "userId": 1,
+rest-assured-runner  |         "id": 2,
+rest-assured-runner  |         "title": "qui est esse",
+rest-assured-runner  |         "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "userId": 1,
+rest-assured-runner  |         "id": 3,
+rest-assured-runner  |         "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+rest-assured-runner  |         "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "userId": 1,
+rest-assured-runner  |         "id": 4,
+rest-assured-runner  |         "title": "eum et est occaecati",
+rest-assured-runner  |         "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "userId": 1,
+rest-assured-runner  |         "id": 5,
+rest-assured-runner  |         "title": "nesciunt quas odio",
+rest-assured-runner  |         "body": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "userId": 1,
+rest-assured-runner  |         "id": 6,
+rest-assured-runner  |         "title": "dolorem eum magni eos aperiam quia",
+rest-assured-runner  |         "body": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "userId": 1,
+rest-assured-runner  |         "id": 7,
+rest-assured-runner  |         "title": "magnam facilis autem",
+rest-assured-runner  |         "body": "dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas"
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "userId": 1,
+rest-assured-runner  |         "id": 8,
+rest-assured-runner  |         "title": "dolorem dolore est ipsam",
+rest-assured-runner  |         "body": "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae"
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "userId": 1,
+rest-assured-runner  |         "id": 9,
+rest-assured-runner  |         "title": "nesciunt iure omnis dolorem tempora et accusantium",
+rest-assured-runner  |         "body": "consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas"
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "userId": 1,
+rest-assured-runner  |         "id": 10,
+rest-assured-runner  |         "title": "optio molestias id quia eum",
+rest-assured-runner  |         "body": "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error"
+rest-assured-runner  |     }
+rest-assured-runner  | ]
+rest-assured-runner  | Request method:  GET
+rest-assured-runner  | Request URI:     https://jsonplaceholder.typicode.com/users
+rest-assured-runner  | Proxy:                   <none>
+rest-assured-runner  | Request params:  <none>
+rest-assured-runner  | Query params:    <none>
+rest-assured-runner  | Form params:     <none>
+rest-assured-runner  | Path params:     <none>
+rest-assured-runner  | Headers:         Accept=*/*
+rest-assured-runner  |                          Content-Type=application/json
+rest-assured-runner  | Cookies:         <none>
+rest-assured-runner  | Multiparts:              <none>
+rest-assured-runner  | Body:                    <none>
+rest-assured-runner  | Request method:  GET
+rest-assured-runner  | Request URI:     https://jsonplaceholder.typicode.com/users
+rest-assured-runner  | Proxy:                   <none>
+rest-assured-runner  | Request params:  <none>
+rest-assured-runner  | Query params:    <none>
+rest-assured-runner  | Form params:     <none>
+rest-assured-runner  | Path params:     <none>
+rest-assured-runner  | Headers:         Accept=*/*
+rest-assured-runner  |                          Content-Type=application/json
+rest-assured-runner  | Cookies:         <none>
+rest-assured-runner  | Multiparts:              <none>
+rest-assured-runner  | Body:                    <none>
+rest-assured-runner  | HTTP/1.1 200 OK
+rest-assured-runner  | Date: Thu, 08 Jan 2026 14:03:06 GMT
+rest-assured-runner  | Content-Type: application/json; charset=utf-8
+rest-assured-runner  | Content-Length: 1847
+rest-assured-runner  | Connection: keep-alive
+rest-assured-runner  | access-control-allow-credentials: true
+rest-assured-runner  | Cache-Control: max-age=43200
+rest-assured-runner  | Content-Encoding: gzip
+rest-assured-runner  | etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+rest-assured-runner  | expires: -1
+rest-assured-runner  | nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+rest-assured-runner  | pragma: no-cache
+rest-assured-runner  | report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=9MW7LzEP4srBOOQpfP%2ByPPu24zh%2FArEdnXDzP6jyuKo%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1764369831"}],"max_age":3600}
+rest-assured-runner  | reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=9MW7LzEP4srBOOQpfP%2ByPPu24zh%2FArEdnXDzP6jyuKo%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1764369831"
+rest-assured-runner  | Server: cloudflare
+rest-assured-runner  | vary: Origin, Accept-Encoding
+rest-assured-runner  | via: 2.0 heroku-router
+rest-assured-runner  | x-content-type-options: nosniff
+rest-assured-runner  | x-powered-by: Express
+rest-assured-runner  | x-ratelimit-limit: 1000
+rest-assured-runner  | x-ratelimit-remaining: 997
+rest-assured-runner  | x-ratelimit-reset: 1764369855
+rest-assured-runner  | Age: 1137
+rest-assured-runner  | Accept-Ranges: bytes
+rest-assured-runner  | cf-cache-status: HIT
+rest-assured-runner  | CF-RAY: 9bac3c888ebc11e8-EZE
+rest-assured-runner  | alt-svc: h3=":443"; ma=86400
+rest-assured-runner  |
+rest-assured-runner  | [
+rest-assured-runner  |     {
+rest-assured-runner  |         "id": 1,
+rest-assured-runner  |         "name": "Leanne Graham",
+rest-assured-runner  |         "username": "Bret",
+rest-assured-runner  |         "email": "Sincere@april.biz",
+rest-assured-runner  |         "address": {
+rest-assured-runner  |             "street": "Kulas Light",
+rest-assured-runner  |             "suite": "Apt. 556",
+rest-assured-runner  |             "city": "Gwenborough",
+rest-assured-runner  |             "zipcode": "92998-3874",
+rest-assured-runner  |             "geo": {
+rest-assured-runner  |                 "lat": "-37.3159",
+rest-assured-runner  |                 "lng": "81.1496"
+rest-assured-runner  |             }
+rest-assured-runner  |         },
+rest-assured-runner  |         "phone": "1-770-736-8031 x56442",
+rest-assured-runner  |         "website": "hildegard.org",
+rest-assured-runner  |         "company": {
+rest-assured-runner  |             "name": "Romaguera-Crona",
+rest-assured-runner  |             "catchPhrase": "Multi-layered client-server neural-net",
+rest-assured-runner  |             "bs": "harness real-time e-markets"
+rest-assured-runner  |         }
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "id": 2,
+rest-assured-runner  |         "name": "Ervin Howell",
+rest-assured-runner  |         "username": "Antonette",
+rest-assured-runner  |         "email": "Shanna@melissa.tv",
+rest-assured-runner  |         "address": {
+rest-assured-runner  |             "street": "Victor Plains",
+rest-assured-runner  |             "suite": "Suite 879",
+rest-assured-runner  |             "city": "Wisokyburgh",
+rest-assured-runner  |             "zipcode": "90566-7771",
+rest-assured-runner  |             "geo": {
+rest-assured-runner  |                 "lat": "-43.9509",
+rest-assured-runner  |                 "lng": "-34.4618"
+rest-assured-runner  |             }
+rest-assured-runner  |         },
+rest-assured-runner  |         "phone": "010-692-6593 x09125",
+rest-assured-runner  |         "website": "anastasia.net",
+rest-assured-runner  |         "company": {
+rest-assured-runner  |             "name": "Deckow-Crist",
+rest-assured-runner  |             "catchPhrase": "Proactive didactic contingency",
+rest-assured-runner  |             "bs": "synergize scalable supply-chains"
+rest-assured-runner  |         }
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "id": 3,
+rest-assured-runner  |         "name": "Clementine Bauch",
+rest-assured-runner  |         "username": "Samantha",
+rest-assured-runner  |         "email": "Nathan@yesenia.net",
+rest-assured-runner  |         "address": {
+rest-assured-runner  |             "street": "Douglas Extension",
+rest-assured-runner  |             "suite": "Suite 847",
+rest-assured-runner  |             "city": "McKenziehaven",
+rest-assured-runner  |             "zipcode": "59590-4157",
+rest-assured-runner  |             "geo": {
+rest-assured-runner  |                 "lat": "-68.6102",
+rest-assured-runner  |                 "lng": "-47.0653"
+rest-assured-runner  |             }
+rest-assured-runner  |         },
+rest-assured-runner  |         "phone": "1-463-123-4447",
+rest-assured-runner  |         "website": "ramiro.info",
+rest-assured-runner  |         "company": {
+rest-assured-runner  |             "name": "Romaguera-Jacobson",
+rest-assured-runner  |             "catchPhrase": "Face to face bifurcated interface",
+rest-assured-runner  |             "bs": "e-enable strategic applications"
+rest-assured-runner  |         }
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "id": 4,
+rest-assured-runner  |         "name": "Patricia Lebsack",
+rest-assured-runner  |         "username": "Karianne",
+rest-assured-runner  |         "email": "Julianne.OConner@kory.org",
+rest-assured-runner  |         "address": {
+rest-assured-runner  |             "street": "Hoeger Mall",
+rest-assured-runner  |             "suite": "Apt. 692",
+rest-assured-runner  |             "city": "South Elvis",
+rest-assured-runner  |             "zipcode": "53919-4257",
+rest-assured-runner  |             "geo": {
+rest-assured-runner  |                 "lat": "29.4572",
+rest-assured-runner  |                 "lng": "-164.2990"
+rest-assured-runner  |             }
+rest-assured-runner  |         },
+rest-assured-runner  |         "phone": "493-170-9623 x156",
+rest-assured-runner  |         "website": "kale.biz",
+rest-assured-runner  |         "company": {
+rest-assured-runner  |             "name": "Robel-Corkery",
+rest-assured-runner  |             "catchPhrase": "Multi-tiered zero tolerance productivity",
+rest-assured-runner  |             "bs": "transition cutting-edge web services"
+rest-assured-runner  |         }
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "id": 5,
+rest-assured-runner  |         "name": "Chelsey Dietrich",
+rest-assured-runner  |         "username": "Kamren",
+rest-assured-runner  |         "email": "Lucio_Hettinger@annie.ca",
+rest-assured-runner  |         "address": {
+rest-assured-runner  |             "street": "Skiles Walks",
+rest-assured-runner  |             "suite": "Suite 351",
+rest-assured-runner  |             "city": "Roscoeview",
+rest-assured-runner  |             "zipcode": "33263",
+rest-assured-runner  |             "geo": {
+rest-assured-runner  |                 "lat": "-31.8129",
+rest-assured-runner  |                 "lng": "62.5342"
+rest-assured-runner  |             }
+rest-assured-runner  |         },
+rest-assured-runner  |         "phone": "(254)954-1289",
+rest-assured-runner  |         "website": "demarco.info",
+rest-assured-runner  |         "company": {
+rest-assured-runner  |             "name": "Keebler LLC",
+rest-assured-runner  |             "catchPhrase": "User-centric fault-tolerant solution",
+rest-assured-runner  |             "bs": "revolutionize end-to-end systems"
+rest-assured-runner  |         }
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "id": 6,
+rest-assured-runner  |         "name": "Mrs. Dennis Schulist",
+rest-assured-runner  |         "username": "Leopoldo_Corkery",
+rest-assured-runner  |         "email": "Karley_Dach@jasper.info",
+rest-assured-runner  |         "address": {
+rest-assured-runner  |             "street": "Norberto Crossing",
+rest-assured-runner  |             "suite": "Apt. 950",
+rest-assured-runner  |             "city": "South Christy",
+rest-assured-runner  |             "zipcode": "23505-1337",
+rest-assured-runner  |             "geo": {
+rest-assured-runner  |                 "lat": "-71.4197",
+rest-assured-runner  |                 "lng": "71.7478"
+rest-assured-runner  |             }
+rest-assured-runner  |         },
+rest-assured-runner  |         "phone": "1-477-935-8478 x6430",
+rest-assured-runner  |         "website": "ola.org",
+rest-assured-runner  |         "company": {
+rest-assured-runner  |             "name": "Considine-Lockman",
+rest-assured-runner  |             "catchPhrase": "Synchronised bottom-line interface",
+rest-assured-runner  |             "bs": "e-enable innovative applications"
+rest-assured-runner  |         }
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "id": 7,
+rest-assured-runner  |         "name": "Kurtis Weissnat",
+rest-assured-runner  |         "username": "Elwyn.Skiles",
+rest-assured-runner  |         "email": "Telly.Hoeger@billy.biz",
+rest-assured-runner  |         "address": {
+rest-assured-runner  |             "street": "Rex Trail",
+rest-assured-runner  |             "suite": "Suite 280",
+rest-assured-runner  |             "city": "Howemouth",
+rest-assured-runner  |             "zipcode": "58804-1099",
+rest-assured-runner  |             "geo": {
+rest-assured-runner  |                 "lat": "24.8918",
+rest-assured-runner  |                 "lng": "21.8984"
+rest-assured-runner  |             }
+rest-assured-runner  |         },
+rest-assured-runner  |         "phone": "210.067.6132",
+rest-assured-runner  |         "website": "elvis.io",
+rest-assured-runner  |         "company": {
+rest-assured-runner  |             "name": "Johns Group",
+rest-assured-runner  |             "catchPhrase": "Configurable multimedia task-force",
+rest-assured-runner  |             "bs": "generate enterprise e-tailers"
+rest-assured-runner  |         }
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "id": 8,
+rest-assured-runner  |         "name": "Nicholas Runolfsdottir V",
+rest-assured-runner  |         "username": "Maxime_Nienow",
+rest-assured-runner  |         "email": "Sherwood@rosamond.me",
+rest-assured-runner  |         "address": {
+rest-assured-runner  |             "street": "Ellsworth Summit",
+rest-assured-runner  |             "suite": "Suite 729",
+rest-assured-runner  |             "city": "Aliyaview",
+rest-assured-runner  |             "zipcode": "45169",
+rest-assured-runner  |             "geo": {
+rest-assured-runner  |                 "lat": "-14.3990",
+rest-assured-runner  |                 "lng": "-120.7677"
+rest-assured-runner  |             }
+rest-assured-runner  |         },
+rest-assured-runner  |         "phone": "586.493.6943 x140",
+rest-assured-runner  |         "website": "jacynthe.com",
+rest-assured-runner  |         "company": {
+rest-assured-runner  |             "name": "Abernathy Group",
+rest-assured-runner  |             "catchPhrase": "Implemented secondary concept",
+rest-assured-runner  |             "bs": "e-enable extensible e-tailers"
+rest-assured-runner  |         }
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "id": 9,
+rest-assured-runner  |         "name": "Glenna Reichert",
+rest-assured-runner  |         "username": "Delphine",
+rest-assured-runner  |         "email": "Chaim_McDermott@dana.io",
+rest-assured-runner  |         "address": {
+rest-assured-runner  |             "street": "Dayna Park",
+rest-assured-runner  |             "suite": "Suite 449",
+rest-assured-runner  |             "city": "Bartholomebury",
+rest-assured-runner  |             "zipcode": "76495-3109",
+rest-assured-runner  |             "geo": {
+rest-assured-runner  |                 "lat": "24.6463",
+rest-assured-runner  |                 "lng": "-168.8889"
+rest-assured-runner  |             }
+rest-assured-runner  |         },
+rest-assured-runner  |         "phone": "(775)976-6794 x41206",
+rest-assured-runner  |         "website": "conrad.com",
+rest-assured-runner  |         "company": {
+rest-assured-runner  |             "name": "Yost and Sons",
+rest-assured-runner  |             "catchPhrase": "Switchable contextually-based project",
+rest-assured-runner  |             "bs": "aggregate real-time technologies"
+rest-assured-runner  |         }
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "id": 10,
+rest-assured-runner  |         "name": "Clementina DuBuque",
+rest-assured-runner  |         "username": "Moriah.Stanton",
+rest-assured-runner  |         "email": "Rey.Padberg@karina.biz",
+rest-assured-runner  |         "address": {
+rest-assured-runner  |             "street": "Kattie Turnpike",
+rest-assured-runner  |             "suite": "Suite 198",
+rest-assured-runner  |             "city": "Lebsackbury",
+rest-assured-runner  |             "zipcode": "31428-2261",
+rest-assured-runner  |             "geo": {
+rest-assured-runner  |                 "lat": "-38.2386",
+rest-assured-runner  |                 "lng": "57.2232"
+rest-assured-runner  |             }
+rest-assured-runner  |         },
+rest-assured-runner  |         "phone": "024-648-3804",
+rest-assured-runner  |         "website": "ambrose.net",
+rest-assured-runner  |         "company": {
+rest-assured-runner  |             "name": "Hoeger LLC",
+rest-assured-runner  |             "catchPhrase": "Centralized empowering task-force",
+rest-assured-runner  |             "bs": "target end-to-end models"
+rest-assured-runner  |         }
+rest-assured-runner  |     }
+rest-assured-runner  | ]
+rest-assured-runner  | HTTP/1.1 200 OK
+rest-assured-runner  | Date: Thu, 08 Jan 2026 14:03:06 GMT
+rest-assured-runner  | Content-Type: application/json; charset=utf-8
+rest-assured-runner  | Content-Length: 1847
+rest-assured-runner  | Connection: keep-alive
+rest-assured-runner  | access-control-allow-credentials: true
+rest-assured-runner  | Cache-Control: max-age=43200
+rest-assured-runner  | Content-Encoding: gzip
+rest-assured-runner  | etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+rest-assured-runner  | expires: -1
+rest-assured-runner  | nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+rest-assured-runner  | pragma: no-cache
+rest-assured-runner  | report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=9MW7LzEP4srBOOQpfP%2ByPPu24zh%2FArEdnXDzP6jyuKo%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1764369831"}],"max_age":3600}
+rest-assured-runner  | reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=9MW7LzEP4srBOOQpfP%2ByPPu24zh%2FArEdnXDzP6jyuKo%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1764369831"
+rest-assured-runner  | Server: cloudflare
+rest-assured-runner  | vary: Origin, Accept-Encoding
+rest-assured-runner  | via: 2.0 heroku-router
+rest-assured-runner  | x-content-type-options: nosniff
+rest-assured-runner  | x-powered-by: Express
+rest-assured-runner  | x-ratelimit-limit: 1000
+rest-assured-runner  | x-ratelimit-remaining: 997
+rest-assured-runner  | x-ratelimit-reset: 1764369855
+rest-assured-runner  | Age: 1137
+rest-assured-runner  | Accept-Ranges: bytes
+rest-assured-runner  | cf-cache-status: HIT
+rest-assured-runner  | CF-RAY: 9bac3c888ebc11e8-EZE
+rest-assured-runner  | alt-svc: h3=":443"; ma=86400
+rest-assured-runner  |
+rest-assured-runner  | [
+rest-assured-runner  |     {
+rest-assured-runner  |         "id": 1,
+rest-assured-runner  |         "name": "Leanne Graham",
+rest-assured-runner  |         "username": "Bret",
+rest-assured-runner  |         "email": "Sincere@april.biz",
+rest-assured-runner  |         "address": {
+rest-assured-runner  |             "street": "Kulas Light",
+rest-assured-runner  |             "suite": "Apt. 556",
+rest-assured-runner  |             "city": "Gwenborough",
+rest-assured-runner  |             "zipcode": "92998-3874",
+rest-assured-runner  |             "geo": {
+rest-assured-runner  |                 "lat": "-37.3159",
+rest-assured-runner  |                 "lng": "81.1496"
+rest-assured-runner  |             }
+rest-assured-runner  |         },
+rest-assured-runner  |         "phone": "1-770-736-8031 x56442",
+rest-assured-runner  |         "website": "hildegard.org",
+rest-assured-runner  |         "company": {
+rest-assured-runner  |             "name": "Romaguera-Crona",
+rest-assured-runner  |             "catchPhrase": "Multi-layered client-server neural-net",
+rest-assured-runner  |             "bs": "harness real-time e-markets"
+rest-assured-runner  |         }
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "id": 2,
+rest-assured-runner  |         "name": "Ervin Howell",
+rest-assured-runner  |         "username": "Antonette",
+rest-assured-runner  |         "email": "Shanna@melissa.tv",
+rest-assured-runner  |         "address": {
+rest-assured-runner  |             "street": "Victor Plains",
+rest-assured-runner  |             "suite": "Suite 879",
+rest-assured-runner  |             "city": "Wisokyburgh",
+rest-assured-runner  |             "zipcode": "90566-7771",
+rest-assured-runner  |             "geo": {
+rest-assured-runner  |                 "lat": "-43.9509",
+rest-assured-runner  |                 "lng": "-34.4618"
+rest-assured-runner  |             }
+rest-assured-runner  |         },
+rest-assured-runner  |         "phone": "010-692-6593 x09125",
+rest-assured-runner  |         "website": "anastasia.net",
+rest-assured-runner  |         "company": {
+rest-assured-runner  |             "name": "Deckow-Crist",
+rest-assured-runner  |             "catchPhrase": "Proactive didactic contingency",
+rest-assured-runner  |             "bs": "synergize scalable supply-chains"
+rest-assured-runner  |         }
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "id": 3,
+rest-assured-runner  |         "name": "Clementine Bauch",
+rest-assured-runner  |         "username": "Samantha",
+rest-assured-runner  |         "email": "Nathan@yesenia.net",
+rest-assured-runner  |         "address": {
+rest-assured-runner  |             "street": "Douglas Extension",
+rest-assured-runner  |             "suite": "Suite 847",
+rest-assured-runner  |             "city": "McKenziehaven",
+rest-assured-runner  |             "zipcode": "59590-4157",
+rest-assured-runner  |             "geo": {
+rest-assured-runner  |                 "lat": "-68.6102",
+rest-assured-runner  |                 "lng": "-47.0653"
+rest-assured-runner  |             }
+rest-assured-runner  |         },
+rest-assured-runner  |         "phone": "1-463-123-4447",
+rest-assured-runner  |         "website": "ramiro.info",
+rest-assured-runner  |         "company": {
+rest-assured-runner  |             "name": "Romaguera-Jacobson",
+rest-assured-runner  |             "catchPhrase": "Face to face bifurcated interface",
+rest-assured-runner  |             "bs": "e-enable strategic applications"
+rest-assured-runner  |         }
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "id": 4,
+rest-assured-runner  |         "name": "Patricia Lebsack",
+rest-assured-runner  |         "username": "Karianne",
+rest-assured-runner  |         "email": "Julianne.OConner@kory.org",
+rest-assured-runner  |         "address": {
+rest-assured-runner  |             "street": "Hoeger Mall",
+rest-assured-runner  |             "suite": "Apt. 692",
+rest-assured-runner  |             "city": "South Elvis",
+rest-assured-runner  |             "zipcode": "53919-4257",
+rest-assured-runner  |             "geo": {
+rest-assured-runner  |                 "lat": "29.4572",
+rest-assured-runner  |                 "lng": "-164.2990"
+rest-assured-runner  |             }
+rest-assured-runner  |         },
+rest-assured-runner  |         "phone": "493-170-9623 x156",
+rest-assured-runner  |         "website": "kale.biz",
+rest-assured-runner  |         "company": {
+rest-assured-runner  |             "name": "Robel-Corkery",
+rest-assured-runner  |             "catchPhrase": "Multi-tiered zero tolerance productivity",
+rest-assured-runner  |             "bs": "transition cutting-edge web services"
+rest-assured-runner  |         }
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "id": 5,
+rest-assured-runner  |         "name": "Chelsey Dietrich",
+rest-assured-runner  |         "username": "Kamren",
+rest-assured-runner  |         "email": "Lucio_Hettinger@annie.ca",
+rest-assured-runner  |         "address": {
+rest-assured-runner  |             "street": "Skiles Walks",
+rest-assured-runner  |             "suite": "Suite 351",
+rest-assured-runner  |             "city": "Roscoeview",
+rest-assured-runner  |             "zipcode": "33263",
+rest-assured-runner  |             "geo": {
+rest-assured-runner  |                 "lat": "-31.8129",
+rest-assured-runner  |                 "lng": "62.5342"
+rest-assured-runner  |             }
+rest-assured-runner  |         },
+rest-assured-runner  |         "phone": "(254)954-1289",
+rest-assured-runner  |         "website": "demarco.info",
+rest-assured-runner  |         "company": {
+rest-assured-runner  |             "name": "Keebler LLC",
+rest-assured-runner  |             "catchPhrase": "User-centric fault-tolerant solution",
+rest-assured-runner  |             "bs": "revolutionize end-to-end systems"
+rest-assured-runner  |         }
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "id": 6,
+rest-assured-runner  |         "name": "Mrs. Dennis Schulist",
+rest-assured-runner  |         "username": "Leopoldo_Corkery",
+rest-assured-runner  |         "email": "Karley_Dach@jasper.info",
+rest-assured-runner  |         "address": {
+rest-assured-runner  |             "street": "Norberto Crossing",
+rest-assured-runner  |             "suite": "Apt. 950",
+rest-assured-runner  |             "city": "South Christy",
+rest-assured-runner  |             "zipcode": "23505-1337",
+rest-assured-runner  |             "geo": {
+rest-assured-runner  |                 "lat": "-71.4197",
+rest-assured-runner  |                 "lng": "71.7478"
+rest-assured-runner  |             }
+rest-assured-runner  |         },
+rest-assured-runner  |         "phone": "1-477-935-8478 x6430",
+rest-assured-runner  |         "website": "ola.org",
+rest-assured-runner  |         "company": {
+rest-assured-runner  |             "name": "Considine-Lockman",
+rest-assured-runner  |             "catchPhrase": "Synchronised bottom-line interface",
+rest-assured-runner  |             "bs": "e-enable innovative applications"
+rest-assured-runner  |         }
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "id": 7,
+rest-assured-runner  |         "name": "Kurtis Weissnat",
+rest-assured-runner  |         "username": "Elwyn.Skiles",
+rest-assured-runner  |         "email": "Telly.Hoeger@billy.biz",
+rest-assured-runner  |         "address": {
+rest-assured-runner  |             "street": "Rex Trail",
+rest-assured-runner  |             "suite": "Suite 280",
+rest-assured-runner  |             "city": "Howemouth",
+rest-assured-runner  |             "zipcode": "58804-1099",
+rest-assured-runner  |             "geo": {
+rest-assured-runner  |                 "lat": "24.8918",
+rest-assured-runner  |                 "lng": "21.8984"
+rest-assured-runner  |             }
+rest-assured-runner  |         },
+rest-assured-runner  |         "phone": "210.067.6132",
+rest-assured-runner  |         "website": "elvis.io",
+rest-assured-runner  |         "company": {
+rest-assured-runner  |             "name": "Johns Group",
+rest-assured-runner  |             "catchPhrase": "Configurable multimedia task-force",
+rest-assured-runner  |             "bs": "generate enterprise e-tailers"
+rest-assured-runner  |         }
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "id": 8,
+rest-assured-runner  |         "name": "Nicholas Runolfsdottir V",
+rest-assured-runner  |         "username": "Maxime_Nienow",
+rest-assured-runner  |         "email": "Sherwood@rosamond.me",
+rest-assured-runner  |         "address": {
+rest-assured-runner  |             "street": "Ellsworth Summit",
+rest-assured-runner  |             "suite": "Suite 729",
+rest-assured-runner  |             "city": "Aliyaview",
+rest-assured-runner  |             "zipcode": "45169",
+rest-assured-runner  |             "geo": {
+rest-assured-runner  |                 "lat": "-14.3990",
+rest-assured-runner  |                 "lng": "-120.7677"
+rest-assured-runner  |             }
+rest-assured-runner  |         },
+rest-assured-runner  |         "phone": "586.493.6943 x140",
+rest-assured-runner  |         "website": "jacynthe.com",
+rest-assured-runner  |         "company": {
+rest-assured-runner  |             "name": "Abernathy Group",
+rest-assured-runner  |             "catchPhrase": "Implemented secondary concept",
+rest-assured-runner  |             "bs": "e-enable extensible e-tailers"
+rest-assured-runner  |         }
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "id": 9,
+rest-assured-runner  |         "name": "Glenna Reichert",
+rest-assured-runner  |         "username": "Delphine",
+rest-assured-runner  |         "email": "Chaim_McDermott@dana.io",
+rest-assured-runner  |         "address": {
+rest-assured-runner  |             "street": "Dayna Park",
+rest-assured-runner  |             "suite": "Suite 449",
+rest-assured-runner  |             "city": "Bartholomebury",
+rest-assured-runner  |             "zipcode": "76495-3109",
+rest-assured-runner  |             "geo": {
+rest-assured-runner  |                 "lat": "24.6463",
+rest-assured-runner  |                 "lng": "-168.8889"
+rest-assured-runner  |             }
+rest-assured-runner  |         },
+rest-assured-runner  |         "phone": "(775)976-6794 x41206",
+rest-assured-runner  |         "website": "conrad.com",
+rest-assured-runner  |         "company": {
+rest-assured-runner  |             "name": "Yost and Sons",
+rest-assured-runner  |             "catchPhrase": "Switchable contextually-based project",
+rest-assured-runner  |             "bs": "aggregate real-time technologies"
+rest-assured-runner  |         }
+rest-assured-runner  |     },
+rest-assured-runner  |     {
+rest-assured-runner  |         "id": 10,
+rest-assured-runner  |         "name": "Clementina DuBuque",
+rest-assured-runner  |         "username": "Moriah.Stanton",
+rest-assured-runner  |         "email": "Rey.Padberg@karina.biz",
+rest-assured-runner  |         "address": {
+rest-assured-runner  |             "street": "Kattie Turnpike",
+rest-assured-runner  |             "suite": "Suite 198",
+rest-assured-runner  |             "city": "Lebsackbury",
+rest-assured-runner  |             "zipcode": "31428-2261",
+rest-assured-runner  |             "geo": {
+rest-assured-runner  |                 "lat": "-38.2386",
+rest-assured-runner  |                 "lng": "57.2232"
+rest-assured-runner  |             }
+rest-assured-runner  |         },
+rest-assured-runner  |         "phone": "024-648-3804",
+rest-assured-runner  |         "website": "ambrose.net",
+rest-assured-runner  |         "company": {
+rest-assured-runner  |             "name": "Hoeger LLC",
+rest-assured-runner  |             "catchPhrase": "Centralized empowering task-force",
+rest-assured-runner  |             "bs": "target end-to-end models"
+rest-assured-runner  |         }
+rest-assured-runner  |     }
+rest-assured-runner  | ]
+rest-assured-runner  | Request method:  GET
+rest-assured-runner  | Request URI:     https://jsonplaceholder.typicode.com/users/1
+rest-assured-runner  | Proxy:                   <none>
+rest-assured-runner  | Request params:  <none>
+rest-assured-runner  | Query params:    <none>
+rest-assured-runner  | Form params:     <none>
+rest-assured-runner  | Path params:     <none>
+rest-assured-runner  | Headers:         Accept=*/*
+rest-assured-runner  |                          Content-Type=application/json
+rest-assured-runner  | Cookies:         <none>
+rest-assured-runner  | Multiparts:              <none>
+rest-assured-runner  | Body:                    <none>
+rest-assured-runner  | Request method:  GET
+rest-assured-runner  | Request URI:     https://jsonplaceholder.typicode.com/users/1
+rest-assured-runner  | Proxy:                   <none>
+rest-assured-runner  | Request params:  <none>
+rest-assured-runner  | Query params:    <none>
+rest-assured-runner  | Form params:     <none>
+rest-assured-runner  | Path params:     <none>
+rest-assured-runner  | Headers:         Accept=*/*
+rest-assured-runner  |                          Content-Type=application/json
+rest-assured-runner  | Cookies:         <none>
+rest-assured-runner  | Multiparts:              <none>
+rest-assured-runner  | Body:                    <none>
+rest-assured-runner  | HTTP/1.1 200 OK
+rest-assured-runner  | Date: Thu, 08 Jan 2026 14:03:07 GMT
+rest-assured-runner  | Content-Type: application/json; charset=utf-8
+rest-assured-runner  | Transfer-Encoding: chunked
+rest-assured-runner  | Connection: keep-alive
+rest-assured-runner  | access-control-allow-credentials: true
+rest-assured-runner  | Cache-Control: max-age=43200
+rest-assured-runner  | etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+rest-assured-runner  | expires: -1
+rest-assured-runner  | nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+rest-assured-runner  | pragma: no-cache
+rest-assured-runner  | report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=5u%2BrFOdTKu8O4XZHAy5fxdAEYCKMUYYySwYDuZ%2FPquQ%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1764309965"}],"max_age":3600}
+rest-assured-runner  | reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=5u%2BrFOdTKu8O4XZHAy5fxdAEYCKMUYYySwYDuZ%2FPquQ%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1764309965"
+rest-assured-runner  | Server: cloudflare
+rest-assured-runner  | vary: Origin, Accept-Encoding
+rest-assured-runner  | via: 2.0 heroku-router
+rest-assured-runner  | x-content-type-options: nosniff
+rest-assured-runner  | x-powered-by: Express
+rest-assured-runner  | x-ratelimit-limit: 1000
+rest-assured-runner  | x-ratelimit-remaining: 932
+rest-assured-runner  | x-ratelimit-reset: 1764309975
+rest-assured-runner  | Age: 1373
+rest-assured-runner  | cf-cache-status: HIT
+rest-assured-runner  | Content-Encoding: gzip
+rest-assured-runner  | CF-RAY: 9bac3c8b4a18988b-EZE
+rest-assured-runner  | alt-svc: h3=":443"; ma=86400
+rest-assured-runner  |
+rest-assured-runner  | {
+rest-assured-runner  |     "id": 1,
+rest-assured-runner  |     "name": "Leanne Graham",
+rest-assured-runner  |     "username": "Bret",
+rest-assured-runner  |     "email": "Sincere@april.biz",
+rest-assured-runner  |     "address": {
+rest-assured-runner  |         "street": "Kulas Light",
+rest-assured-runner  |         "suite": "Apt. 556",
+rest-assured-runner  |         "city": "Gwenborough",
+rest-assured-runner  |         "zipcode": "92998-3874",
+rest-assured-runner  |         "geo": {
+rest-assured-runner  |             "lat": "-37.3159",
+rest-assured-runner  |             "lng": "81.1496"
+rest-assured-runner  |         }
+rest-assured-runner  |     },
+rest-assured-runner  |     "phone": "1-770-736-8031 x56442",
+rest-assured-runner  |     "website": "hildegard.org",
+rest-assured-runner  |     "company": {
+rest-assured-runner  |         "name": "Romaguera-Crona",
+rest-assured-runner  |         "catchPhrase": "Multi-layered client-server neural-net",
+rest-assured-runner  |         "bs": "harness real-time e-markets"
+rest-assured-runner  |     }
+rest-assured-runner  | }
+rest-assured-runner  | HTTP/1.1 200 OK
+rest-assured-runner  | Date: Thu, 08 Jan 2026 14:03:07 GMT
+rest-assured-runner  | Content-Type: application/json; charset=utf-8
+rest-assured-runner  | Transfer-Encoding: chunked
+rest-assured-runner  | Connection: keep-alive
+rest-assured-runner  | access-control-allow-credentials: true
+rest-assured-runner  | Cache-Control: max-age=43200
+rest-assured-runner  | etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+rest-assured-runner  | expires: -1
+rest-assured-runner  | nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+rest-assured-runner  | pragma: no-cache
+rest-assured-runner  | report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=5u%2BrFOdTKu8O4XZHAy5fxdAEYCKMUYYySwYDuZ%2FPquQ%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1764309965"}],"max_age":3600}
+rest-assured-runner  | reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=5u%2BrFOdTKu8O4XZHAy5fxdAEYCKMUYYySwYDuZ%2FPquQ%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1764309965"
+rest-assured-runner  | Server: cloudflare
+rest-assured-runner  | vary: Origin, Accept-Encoding
+rest-assured-runner  | via: 2.0 heroku-router
+rest-assured-runner  | x-content-type-options: nosniff
+rest-assured-runner  | x-powered-by: Express
+rest-assured-runner  | x-ratelimit-limit: 1000
+rest-assured-runner  | x-ratelimit-remaining: 932
+rest-assured-runner  | x-ratelimit-reset: 1764309975
+rest-assured-runner  | Age: 1373
+rest-assured-runner  | cf-cache-status: HIT
+rest-assured-runner  | Content-Encoding: gzip
+rest-assured-runner  | CF-RAY: 9bac3c8b4a18988b-EZE
+rest-assured-runner  | alt-svc: h3=":443"; ma=86400
+rest-assured-runner  |
+rest-assured-runner  | {
+rest-assured-runner  |     "id": 1,
+rest-assured-runner  |     "name": "Leanne Graham",
+rest-assured-runner  |     "username": "Bret",
+rest-assured-runner  |     "email": "Sincere@april.biz",
+rest-assured-runner  |     "address": {
+rest-assured-runner  |         "street": "Kulas Light",
+rest-assured-runner  |         "suite": "Apt. 556",
+rest-assured-runner  |         "city": "Gwenborough",
+rest-assured-runner  |         "zipcode": "92998-3874",
+rest-assured-runner  |         "geo": {
+rest-assured-runner  |             "lat": "-37.3159",
+rest-assured-runner  |             "lng": "81.1496"
+rest-assured-runner  |         }
+rest-assured-runner  |     },
+rest-assured-runner  |     "phone": "1-770-736-8031 x56442",
+rest-assured-runner  |     "website": "hildegard.org",
+rest-assured-runner  |     "company": {
+rest-assured-runner  |         "name": "Romaguera-Crona",
+rest-assured-runner  |         "catchPhrase": "Multi-layered client-server neural-net",
+rest-assured-runner  |         "bs": "harness real-time e-markets"
+rest-assured-runner  |     }
+rest-assured-runner  | }
+rest-assured-runner  | Request method:  GET
+rest-assured-runner  | Request URI:     https://jsonplaceholder.typicode.com/users/99999
+rest-assured-runner  | Proxy:                   <none>
+rest-assured-runner  | Request params:  <none>
+rest-assured-runner  | Query params:    <none>
+rest-assured-runner  | Form params:     <none>
+rest-assured-runner  | Path params:     <none>
+rest-assured-runner  | Headers:         Accept=*/*
+rest-assured-runner  |                          Content-Type=application/json
+rest-assured-runner  | Cookies:         <none>
+rest-assured-runner  | Multiparts:              <none>
+rest-assured-runner  | Body:                    <none>
+rest-assured-runner  | Request method:  GET
+rest-assured-runner  | Request URI:     https://jsonplaceholder.typicode.com/users/99999
+rest-assured-runner  | Proxy:                   <none>
+rest-assured-runner  | Request params:  <none>
+rest-assured-runner  | Query params:    <none>
+rest-assured-runner  | Form params:     <none>
+rest-assured-runner  | Path params:     <none>
+rest-assured-runner  | Headers:         Accept=*/*
+rest-assured-runner  |                          Content-Type=application/json
+rest-assured-runner  | Cookies:         <none>
+rest-assured-runner  | Multiparts:              <none>
+rest-assured-runner  | Body:                    <none>
+rest-assured-runner  | HTTP/1.1 404 Not Found
+rest-assured-runner  | Date: Thu, 08 Jan 2026 14:03:07 GMT
+rest-assured-runner  | Content-Type: application/json; charset=utf-8
+rest-assured-runner  | Transfer-Encoding: chunked
+rest-assured-runner  | Connection: keep-alive
+rest-assured-runner  | access-control-allow-credentials: true
+rest-assured-runner  | Cache-Control: max-age=43200
+rest-assured-runner  | etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+rest-assured-runner  | expires: -1
+rest-assured-runner  | nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+rest-assured-runner  | pragma: no-cache
+rest-assured-runner  | report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=Pb6KtyfGnkaiN%2BpLu6gUHXqKC6Kg6C1aS5uDYgNoeY4%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1767880987"}],"max_age":3600}
+rest-assured-runner  | reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=Pb6KtyfGnkaiN%2BpLu6gUHXqKC6Kg6C1aS5uDYgNoeY4%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1767880987"
+rest-assured-runner  | Server: cloudflare
+rest-assured-runner  | vary: Origin, Accept-Encoding
+rest-assured-runner  | via: 2.0 heroku-router
+rest-assured-runner  | x-content-type-options: nosniff
+rest-assured-runner  | x-powered-by: Express
+rest-assured-runner  | x-ratelimit-limit: 1000
+rest-assured-runner  | x-ratelimit-remaining: 999
+rest-assured-runner  | x-ratelimit-reset: 1767881032
+rest-assured-runner  | cf-cache-status: EXPIRED
+rest-assured-runner  | Content-Encoding: gzip
+rest-assured-runner  | CF-RAY: 9bac3c8cec4c7842-EZE
+rest-assured-runner  | alt-svc: h3=":443"; ma=86400
+rest-assured-runner  |
+rest-assured-runner  | {
+rest-assured-runner  |
+rest-assured-runner  | }
+rest-assured-runner  | HTTP/1.1 404 Not Found
+rest-assured-runner  | Date: Thu, 08 Jan 2026 14:03:07 GMT
+rest-assured-runner  | Content-Type: application/json; charset=utf-8
+rest-assured-runner  | Transfer-Encoding: chunked
+rest-assured-runner  | Connection: keep-alive
+rest-assured-runner  | access-control-allow-credentials: true
+rest-assured-runner  | Cache-Control: max-age=43200
+rest-assured-runner  | etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+rest-assured-runner  | expires: -1
+rest-assured-runner  | nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+rest-assured-runner  | pragma: no-cache
+rest-assured-runner  | report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=Pb6KtyfGnkaiN%2BpLu6gUHXqKC6Kg6C1aS5uDYgNoeY4%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1767880987"}],"max_age":3600}
+rest-assured-runner  | reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=Pb6KtyfGnkaiN%2BpLu6gUHXqKC6Kg6C1aS5uDYgNoeY4%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1767880987"
+rest-assured-runner  | Server: cloudflare
+rest-assured-runner  | vary: Origin, Accept-Encoding
+rest-assured-runner  | via: 2.0 heroku-router
+rest-assured-runner  | x-content-type-options: nosniff
+rest-assured-runner  | x-powered-by: Express
+rest-assured-runner  | x-ratelimit-limit: 1000
+rest-assured-runner  | x-ratelimit-remaining: 999
+rest-assured-runner  | x-ratelimit-reset: 1767881032
+rest-assured-runner  | cf-cache-status: EXPIRED
+rest-assured-runner  | Content-Encoding: gzip
+rest-assured-runner  | CF-RAY: 9bac3c8cec4c7842-EZE
+rest-assured-runner  | alt-svc: h3=":443"; ma=86400
+rest-assured-runner  |
+rest-assured-runner  | {
+rest-assured-runner  |
+rest-assured-runner  | }
+rest-assured-runner  | Request method:  POST
+rest-assured-runner  | Request URI:     https://jsonplaceholder.typicode.com/users
+rest-assured-runner  | Proxy:                   <none>
+rest-assured-runner  | Request params:  <none>
+rest-assured-runner  | Query params:    <none>
+rest-assured-runner  | Form params:     <none>
+rest-assured-runner  | Path params:     <none>
+rest-assured-runner  | Headers:         Accept=*/*
+rest-assured-runner  |                          Content-Type=application/json
+rest-assured-runner  | Cookies:         <none>
+rest-assured-runner  | Multiparts:              <none>
+rest-assured-runner  | Body:
+rest-assured-runner  | {
+rest-assured-runner  |     "name": "Francisco Martinez",
+rest-assured-runner  |     "username": "fran_qa",
+rest-assured-runner  |     "email": "fran@test.com"
+rest-assured-runner  | }
+rest-assured-runner  | Request method:  POST
+rest-assured-runner  | Request URI:     https://jsonplaceholder.typicode.com/users
+rest-assured-runner  | Proxy:                   <none>
+rest-assured-runner  | Request params:  <none>
+rest-assured-runner  | Query params:    <none>
+rest-assured-runner  | Form params:     <none>
+rest-assured-runner  | Path params:     <none>
+rest-assured-runner  | Headers:         Accept=*/*
+rest-assured-runner  |                          Content-Type=application/json
+rest-assured-runner  | Cookies:         <none>
+rest-assured-runner  | Multiparts:              <none>
+rest-assured-runner  | Body:
+rest-assured-runner  | {
+rest-assured-runner  |     "name": "Francisco Martinez",
+rest-assured-runner  |     "username": "fran_qa",
+rest-assured-runner  |     "email": "fran@test.com"
+rest-assured-runner  | }
+rest-assured-runner  | Request method:  POST
+rest-assured-runner  | Request URI:     https://jsonplaceholder.typicode.com/users
+rest-assured-runner  | Proxy:                   <none>
+rest-assured-runner  | Request params:  <none>
+rest-assured-runner  | Query params:    <none>
+rest-assured-runner  | Form params:     <none>
+rest-assured-runner  | Path params:     <none>
+rest-assured-runner  | Headers:         Accept=*/*
+rest-assured-runner  |                          Content-Type=application/json
+rest-assured-runner  | Cookies:         <none>
+rest-assured-runner  | Multiparts:              <none>
+rest-assured-runner  | Body:
+rest-assured-runner  | {
+rest-assured-runner  |     "name": "Francisco Martinez",
+rest-assured-runner  |     "username": "fran_qa",
+rest-assured-runner  |     "email": "fran@test.com"
+rest-assured-runner  | }
+rest-assured-runner  | HTTP/1.1 201 Created
+rest-assured-runner  | Date: Thu, 08 Jan 2026 14:03:09 GMT
+rest-assured-runner  | Content-Type: application/json; charset=utf-8
+rest-assured-runner  | Content-Length: 99
+rest-assured-runner  | Connection: keep-alive
+rest-assured-runner  | access-control-allow-credentials: true
+rest-assured-runner  | access-control-expose-headers: Location
+rest-assured-runner  | Cache-Control: no-cache
+rest-assured-runner  | etag: W/"63-nIjZ3AwejeUSKMw2QpRK7tyshyc"
+rest-assured-runner  | expires: -1
+rest-assured-runner  | location: https://jsonplaceholder.typicode.com/users/11
+rest-assured-runner  | nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+rest-assured-runner  | pragma: no-cache
+rest-assured-runner  | report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=XY4fcvIBBgphy2FPT1Z%2BVaPspGO%2BMYxQ0RkxKruudgw%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1767880989"}],"max_age":3600}
+rest-assured-runner  | reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=XY4fcvIBBgphy2FPT1Z%2BVaPspGO%2BMYxQ0RkxKruudgw%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1767880989"
+rest-assured-runner  | Server: cloudflare
+rest-assured-runner  | vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+rest-assured-runner  | via: 2.0 heroku-router
+rest-assured-runner  | x-content-type-options: nosniff
+rest-assured-runner  | x-powered-by: Express
+rest-assured-runner  | x-ratelimit-limit: 1000
+rest-assured-runner  | x-ratelimit-remaining: 998
+rest-assured-runner  | x-ratelimit-reset: 1767881032
+rest-assured-runner  | cf-cache-status: DYNAMIC
+rest-assured-runner  | CF-RAY: 9bac3c992bcb50bd-EZE
+rest-assured-runner  | alt-svc: h3=":443"; ma=86400
+rest-assured-runner  |
+rest-assured-runner  | {
+rest-assured-runner  |     "name": "Francisco Martinez",
+rest-assured-runner  |     "username": "fran_qa",
+rest-assured-runner  |     "email": "fran@test.com",
+rest-assured-runner  |     "id": 11
+rest-assured-runner  | }
+rest-assured-runner  | HTTP/1.1 201 Created
+rest-assured-runner  | Date: Thu, 08 Jan 2026 14:03:09 GMT
+rest-assured-runner  | Content-Type: application/json; charset=utf-8
+rest-assured-runner  | Content-Length: 99
+rest-assured-runner  | Connection: keep-alive
+rest-assured-runner  | access-control-allow-credentials: true
+rest-assured-runner  | access-control-expose-headers: Location
+rest-assured-runner  | Cache-Control: no-cache
+rest-assured-runner  | etag: W/"63-nIjZ3AwejeUSKMw2QpRK7tyshyc"
+rest-assured-runner  | expires: -1
+rest-assured-runner  | location: https://jsonplaceholder.typicode.com/users/11
+rest-assured-runner  | nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+rest-assured-runner  | pragma: no-cache
+rest-assured-runner  | report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=XY4fcvIBBgphy2FPT1Z%2BVaPspGO%2BMYxQ0RkxKruudgw%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1767880989"}],"max_age":3600}
+rest-assured-runner  | reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=XY4fcvIBBgphy2FPT1Z%2BVaPspGO%2BMYxQ0RkxKruudgw%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1767880989"
+rest-assured-runner  | Server: cloudflare
+rest-assured-runner  | vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+rest-assured-runner  | via: 2.0 heroku-router
+rest-assured-runner  | x-content-type-options: nosniff
+rest-assured-runner  | x-powered-by: Express
+rest-assured-runner  | x-ratelimit-limit: 1000
+rest-assured-runner  | x-ratelimit-remaining: 998
+rest-assured-runner  | x-ratelimit-reset: 1767881032
+rest-assured-runner  | cf-cache-status: DYNAMIC
+rest-assured-runner  | CF-RAY: 9bac3c992bcb50bd-EZE
+rest-assured-runner  | alt-svc: h3=":443"; ma=86400
+rest-assured-runner  |
+rest-assured-runner  | {
+rest-assured-runner  |     "name": "Francisco Martinez",
+rest-assured-runner  |     "username": "fran_qa",
+rest-assured-runner  |     "email": "fran@test.com",
+rest-assured-runner  |     "id": 11
+rest-assured-runner  | }
+rest-assured-runner  | HTTP/1.1 201 Created
+rest-assured-runner  | Date: Thu, 08 Jan 2026 14:03:09 GMT
+rest-assured-runner  | Content-Type: application/json; charset=utf-8
+rest-assured-runner  | Content-Length: 99
+rest-assured-runner  | Connection: keep-alive
+rest-assured-runner  | access-control-allow-credentials: true
+rest-assured-runner  | access-control-expose-headers: Location
+rest-assured-runner  | Cache-Control: no-cache
+rest-assured-runner  | etag: W/"63-nIjZ3AwejeUSKMw2QpRK7tyshyc"
+rest-assured-runner  | expires: -1
+rest-assured-runner  | location: https://jsonplaceholder.typicode.com/users/11
+rest-assured-runner  | nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+rest-assured-runner  | pragma: no-cache
+rest-assured-runner  | report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=XY4fcvIBBgphy2FPT1Z%2BVaPspGO%2BMYxQ0RkxKruudgw%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1767880989"}],"max_age":3600}
+rest-assured-runner  | reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=XY4fcvIBBgphy2FPT1Z%2BVaPspGO%2BMYxQ0RkxKruudgw%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1767880989"
+rest-assured-runner  | Server: cloudflare
+rest-assured-runner  | vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+rest-assured-runner  | via: 2.0 heroku-router
+rest-assured-runner  | x-content-type-options: nosniff
+rest-assured-runner  | x-powered-by: Express
+rest-assured-runner  | x-ratelimit-limit: 1000
+rest-assured-runner  | x-ratelimit-remaining: 998
+rest-assured-runner  | x-ratelimit-reset: 1767881032
+rest-assured-runner  | cf-cache-status: DYNAMIC
+rest-assured-runner  | CF-RAY: 9bac3c992bcb50bd-EZE
+rest-assured-runner  | alt-svc: h3=":443"; ma=86400
+rest-assured-runner  |
+rest-assured-runner  | {
+rest-assured-runner  |     "name": "Francisco Martinez",
+rest-assured-runner  |     "username": "fran_qa",
+rest-assured-runner  |     "email": "fran@test.com",
+rest-assured-runner  |     "id": 11
+rest-assured-runner  | }
+rest-assured-runner  | Request method:  DELETE
+rest-assured-runner  | Request URI:     https://jsonplaceholder.typicode.com/users/1
+rest-assured-runner  | Proxy:                   <none>
+rest-assured-runner  | Request params:  <none>
+rest-assured-runner  | Query params:    <none>
+rest-assured-runner  | Form params:     <none>
+rest-assured-runner  | Path params:     <none>
+rest-assured-runner  | Headers:         Accept=*/*
+rest-assured-runner  |                          Content-Type=application/json
+rest-assured-runner  | Cookies:         <none>
+rest-assured-runner  | Multiparts:              <none>
+rest-assured-runner  | Body:                    <none>
+rest-assured-runner  | Request method:  DELETE
+rest-assured-runner  | Request URI:     https://jsonplaceholder.typicode.com/users/1
+rest-assured-runner  | Proxy:                   <none>
+rest-assured-runner  | Request params:  <none>
+rest-assured-runner  | Query params:    <none>
+rest-assured-runner  | Form params:     <none>
+rest-assured-runner  | Path params:     <none>
+rest-assured-runner  | Headers:         Accept=*/*
+rest-assured-runner  |                          Content-Type=application/json
+rest-assured-runner  | Cookies:         <none>
+rest-assured-runner  | Multiparts:              <none>
+rest-assured-runner  | Body:                    <none>
+rest-assured-runner  | Request method:  DELETE
+rest-assured-runner  | Request URI:     https://jsonplaceholder.typicode.com/users/1
+rest-assured-runner  | Proxy:                   <none>
+rest-assured-runner  | Request params:  <none>
+rest-assured-runner  | Query params:    <none>
+rest-assured-runner  | Form params:     <none>
+rest-assured-runner  | Path params:     <none>
+rest-assured-runner  | Headers:         Accept=*/*
+rest-assured-runner  |                          Content-Type=application/json
+rest-assured-runner  | Cookies:         <none>
+rest-assured-runner  | Multiparts:              <none>
+rest-assured-runner  | Body:                    <none>
+rest-assured-runner  | Request method:  DELETE
+rest-assured-runner  | Request URI:     https://jsonplaceholder.typicode.com/users/1
+rest-assured-runner  | Proxy:                   <none>
+rest-assured-runner  | Request params:  <none>
+rest-assured-runner  | Query params:    <none>
+rest-assured-runner  | Form params:     <none>
+rest-assured-runner  | Path params:     <none>
+rest-assured-runner  | Headers:         Accept=*/*
+rest-assured-runner  |                          Content-Type=application/json
+rest-assured-runner  | Cookies:         <none>
+rest-assured-runner  | Multiparts:              <none>
+rest-assured-runner  | Body:                    <none>
+rest-assured-runner  | HTTP/1.1 200 OK
+rest-assured-runner  | Date: Thu, 08 Jan 2026 14:03:10 GMT
+rest-assured-runner  | Content-Type: application/json; charset=utf-8
+rest-assured-runner  | Transfer-Encoding: chunked
+rest-assured-runner  | Connection: keep-alive
+rest-assured-runner  | access-control-allow-credentials: true
+rest-assured-runner  | Cache-Control: no-cache
+rest-assured-runner  | etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+rest-assured-runner  | expires: -1
+rest-assured-runner  | nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+rest-assured-runner  | pragma: no-cache
+rest-assured-runner  | report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=8L1Oc7Xlc9P29fSjwFuFy%2FPqHc%2Bbjg5WnK5INKVrFks%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1767880990"}],"max_age":3600}
+rest-assured-runner  | reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=8L1Oc7Xlc9P29fSjwFuFy%2FPqHc%2Bbjg5WnK5INKVrFks%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1767880990"
+rest-assured-runner  | Server: cloudflare
+rest-assured-runner  | vary: Origin, Accept-Encoding
+rest-assured-runner  | via: 2.0 heroku-router
+rest-assured-runner  | x-content-type-options: nosniff
+rest-assured-runner  | x-powered-by: Express
+rest-assured-runner  | x-ratelimit-limit: 1000
+rest-assured-runner  | x-ratelimit-remaining: 997
+rest-assured-runner  | x-ratelimit-reset: 1767881032
+rest-assured-runner  | cf-cache-status: DYNAMIC
+rest-assured-runner  | Content-Encoding: gzip
+rest-assured-runner  | CF-RAY: 9bac3c9c8afac084-EZE
+rest-assured-runner  | alt-svc: h3=":443"; ma=86400
+rest-assured-runner  |
+rest-assured-runner  | {
+rest-assured-runner  |
+rest-assured-runner  | }
+rest-assured-runner  | HTTP/1.1 200 OK
+rest-assured-runner  | Date: Thu, 08 Jan 2026 14:03:10 GMT
+rest-assured-runner  | Content-Type: application/json; charset=utf-8
+rest-assured-runner  | Transfer-Encoding: chunked
+rest-assured-runner  | Connection: keep-alive
+rest-assured-runner  | access-control-allow-credentials: true
+rest-assured-runner  | Cache-Control: no-cache
+rest-assured-runner  | etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+rest-assured-runner  | expires: -1
+rest-assured-runner  | nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+rest-assured-runner  | pragma: no-cache
+rest-assured-runner  | report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=8L1Oc7Xlc9P29fSjwFuFy%2FPqHc%2Bbjg5WnK5INKVrFks%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1767880990"}],"max_age":3600}
+rest-assured-runner  | reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=8L1Oc7Xlc9P29fSjwFuFy%2FPqHc%2Bbjg5WnK5INKVrFks%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1767880990"
+rest-assured-runner  | Server: cloudflare
+rest-assured-runner  | vary: Origin, Accept-Encoding
+rest-assured-runner  | via: 2.0 heroku-router
+rest-assured-runner  | x-content-type-options: nosniff
+rest-assured-runner  | x-powered-by: Express
+rest-assured-runner  | x-ratelimit-limit: 1000
+rest-assured-runner  | x-ratelimit-remaining: 997
+rest-assured-runner  | x-ratelimit-reset: 1767881032
+rest-assured-runner  | cf-cache-status: DYNAMIC
+rest-assured-runner  | Content-Encoding: gzip
+rest-assured-runner  | CF-RAY: 9bac3c9c8afac084-EZE
+rest-assured-runner  | alt-svc: h3=":443"; ma=86400
+rest-assured-runner  |
+rest-assured-runner  | {
+rest-assured-runner  |
+rest-assured-runner  | }
+rest-assured-runner  | HTTP/1.1 200 OK
+rest-assured-runner  | Date: Thu, 08 Jan 2026 14:03:10 GMT
+rest-assured-runner  | Content-Type: application/json; charset=utf-8
+rest-assured-runner  | Transfer-Encoding: chunked
+rest-assured-runner  | Connection: keep-alive
+rest-assured-runner  | access-control-allow-credentials: true
+rest-assured-runner  | Cache-Control: no-cache
+rest-assured-runner  | etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+rest-assured-runner  | expires: -1
+rest-assured-runner  | nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+rest-assured-runner  | pragma: no-cache
+rest-assured-runner  | report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=8L1Oc7Xlc9P29fSjwFuFy%2FPqHc%2Bbjg5WnK5INKVrFks%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1767880990"}],"max_age":3600}
+rest-assured-runner  | reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=8L1Oc7Xlc9P29fSjwFuFy%2FPqHc%2Bbjg5WnK5INKVrFks%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1767880990"
+rest-assured-runner  | Server: cloudflare
+rest-assured-runner  | vary: Origin, Accept-Encoding
+rest-assured-runner  | via: 2.0 heroku-router
+rest-assured-runner  | x-content-type-options: nosniff
+rest-assured-runner  | x-powered-by: Express
+rest-assured-runner  | x-ratelimit-limit: 1000
+rest-assured-runner  | x-ratelimit-remaining: 997
+rest-assured-runner  | x-ratelimit-reset: 1767881032
+rest-assured-runner  | cf-cache-status: DYNAMIC
+rest-assured-runner  | Content-Encoding: gzip
+rest-assured-runner  | CF-RAY: 9bac3c9c8afac084-EZE
+rest-assured-runner  | alt-svc: h3=":443"; ma=86400
+rest-assured-runner  |
+rest-assured-runner  | {
+rest-assured-runner  |
+rest-assured-runner  | }
+rest-assured-runner  | HTTP/1.1 200 OK
+rest-assured-runner  | Date: Thu, 08 Jan 2026 14:03:10 GMT
+rest-assured-runner  | Content-Type: application/json; charset=utf-8
+rest-assured-runner  | Transfer-Encoding: chunked
+rest-assured-runner  | Connection: keep-alive
+rest-assured-runner  | access-control-allow-credentials: true
+rest-assured-runner  | Cache-Control: no-cache
+rest-assured-runner  | etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+rest-assured-runner  | expires: -1
+rest-assured-runner  | nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+rest-assured-runner  | pragma: no-cache
+rest-assured-runner  | report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=8L1Oc7Xlc9P29fSjwFuFy%2FPqHc%2Bbjg5WnK5INKVrFks%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1767880990"}],"max_age":3600}
+rest-assured-runner  | reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=8L1Oc7Xlc9P29fSjwFuFy%2FPqHc%2Bbjg5WnK5INKVrFks%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1767880990"
+rest-assured-runner  | Server: cloudflare
+rest-assured-runner  | vary: Origin, Accept-Encoding
+rest-assured-runner  | via: 2.0 heroku-router
+rest-assured-runner  | x-content-type-options: nosniff
+rest-assured-runner  | x-powered-by: Express
+rest-assured-runner  | x-ratelimit-limit: 1000
+rest-assured-runner  | x-ratelimit-remaining: 997
+rest-assured-runner  | x-ratelimit-reset: 1767881032
+rest-assured-runner  | cf-cache-status: DYNAMIC
+rest-assured-runner  | Content-Encoding: gzip
+rest-assured-runner  | CF-RAY: 9bac3c9c8afac084-EZE
+rest-assured-runner  | alt-svc: h3=":443"; ma=86400
+rest-assured-runner  |
+rest-assured-runner  | {
+rest-assured-runner  |
+rest-assured-runner  | }
+rest-assured-runner  | Request method:  PUT
+rest-assured-runner  | Request URI:     https://jsonplaceholder.typicode.com/users/1
+rest-assured-runner  | Proxy:                   <none>
+rest-assured-runner  | Request params:  <none>
+rest-assured-runner  | Query params:    <none>
+rest-assured-runner  | Form params:     <none>
+rest-assured-runner  | Path params:     <none>
+rest-assured-runner  | Headers:         Accept=*/*
+rest-assured-runner  |                          Content-Type=application/json
+rest-assured-runner  | Cookies:         <none>
+rest-assured-runner  | Multiparts:              <none>
+rest-assured-runner  | Body:
+rest-assured-runner  | {
+rest-assured-runner  |     "name": "Francisco Updated",
+rest-assured-runner  |     "username": "fran_v2",
+rest-assured-runner  |     "email": "newemail@test.com"
+rest-assured-runner  | }
+rest-assured-runner  | Request method:  PUT
+rest-assured-runner  | Request URI:     https://jsonplaceholder.typicode.com/users/1
+rest-assured-runner  | Proxy:                   <none>
+rest-assured-runner  | Request params:  <none>
+rest-assured-runner  | Query params:    <none>
+rest-assured-runner  | Form params:     <none>
+rest-assured-runner  | Path params:     <none>
+rest-assured-runner  | Headers:         Accept=*/*
+rest-assured-runner  |                          Content-Type=application/json
+rest-assured-runner  | Cookies:         <none>
+rest-assured-runner  | Multiparts:              <none>
+rest-assured-runner  | Body:
+rest-assured-runner  | {
+rest-assured-runner  |     "name": "Francisco Updated",
+rest-assured-runner  |     "username": "fran_v2",
+rest-assured-runner  |     "email": "newemail@test.com"
+rest-assured-runner  | }
+rest-assured-runner  | Request method:  PUT
+rest-assured-runner  | Request URI:     https://jsonplaceholder.typicode.com/users/1
+rest-assured-runner  | Proxy:                   <none>
+rest-assured-runner  | Request params:  <none>
+rest-assured-runner  | Query params:    <none>
+rest-assured-runner  | Form params:     <none>
+rest-assured-runner  | Path params:     <none>
+rest-assured-runner  | Headers:         Accept=*/*
+rest-assured-runner  |                          Content-Type=application/json
+rest-assured-runner  | Cookies:         <none>
+rest-assured-runner  | Multiparts:              <none>
+rest-assured-runner  | Body:
+rest-assured-runner  | {
+rest-assured-runner  |     "name": "Francisco Updated",
+rest-assured-runner  |     "username": "fran_v2",
+rest-assured-runner  |     "email": "newemail@test.com"
+rest-assured-runner  | }
+rest-assured-runner  | Request method:  PUT
+rest-assured-runner  | Request URI:     https://jsonplaceholder.typicode.com/users/1
+rest-assured-runner  | Proxy:                   <none>
+rest-assured-runner  | Request params:  <none>
+rest-assured-runner  | Query params:    <none>
+rest-assured-runner  | Form params:     <none>
+rest-assured-runner  | Path params:     <none>
+rest-assured-runner  | Headers:         Accept=*/*
+rest-assured-runner  |                          Content-Type=application/json
+rest-assured-runner  | Cookies:         <none>
+rest-assured-runner  | Multiparts:              <none>
+rest-assured-runner  | Body:
+rest-assured-runner  | {
+rest-assured-runner  |     "name": "Francisco Updated",
+rest-assured-runner  |     "username": "fran_v2",
+rest-assured-runner  |     "email": "newemail@test.com"
+rest-assured-runner  | }
+rest-assured-runner  | HTTP/1.1 200 OK
+rest-assured-runner  | Date: Thu, 08 Jan 2026 14:03:10 GMT
+rest-assured-runner  | Content-Type: application/json; charset=utf-8
+rest-assured-runner  | Transfer-Encoding: chunked
+rest-assured-runner  | Connection: keep-alive
+rest-assured-runner  | access-control-allow-credentials: true
+rest-assured-runner  | Cache-Control: no-cache
+rest-assured-runner  | etag: W/"65-FQH463NtMGgvUFILRcfrJZWgYEw"
+rest-assured-runner  | expires: -1
+rest-assured-runner  | nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+rest-assured-runner  | pragma: no-cache
+rest-assured-runner  | report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=8L1Oc7Xlc9P29fSjwFuFy%2FPqHc%2Bbjg5WnK5INKVrFks%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1767880990"}],"max_age":3600}
+rest-assured-runner  | reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=8L1Oc7Xlc9P29fSjwFuFy%2FPqHc%2Bbjg5WnK5INKVrFks%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1767880990"
+rest-assured-runner  | Server: cloudflare
+rest-assured-runner  | vary: Origin, Accept-Encoding
+rest-assured-runner  | via: 2.0 heroku-router
+rest-assured-runner  | x-content-type-options: nosniff
+rest-assured-runner  | x-powered-by: Express
+rest-assured-runner  | x-ratelimit-limit: 1000
+rest-assured-runner  | x-ratelimit-remaining: 996
+rest-assured-runner  | x-ratelimit-reset: 1767881032
+rest-assured-runner  | cf-cache-status: DYNAMIC
+rest-assured-runner  | Content-Encoding: gzip
+rest-assured-runner  | CF-RAY: 9bac3c9e985ca793-EZE
+rest-assured-runner  | alt-svc: h3=":443"; ma=86400
+rest-assured-runner  |
+rest-assured-runner  | {
+rest-assured-runner  |     "name": "Francisco Updated",
+rest-assured-runner  |     "username": "fran_v2",
+rest-assured-runner  |     "email": "newemail@test.com",
+rest-assured-runner  |     "id": 1
+rest-assured-runner  | }
+rest-assured-runner  | HTTP/1.1 200 OK
+rest-assured-runner  | Date: Thu, 08 Jan 2026 14:03:10 GMT
+rest-assured-runner  | Content-Type: application/json; charset=utf-8
+rest-assured-runner  | Transfer-Encoding: chunked
+rest-assured-runner  | Connection: keep-alive
+rest-assured-runner  | access-control-allow-credentials: true
+rest-assured-runner  | Cache-Control: no-cache
+rest-assured-runner  | etag: W/"65-FQH463NtMGgvUFILRcfrJZWgYEw"
+rest-assured-runner  | expires: -1
+rest-assured-runner  | nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+rest-assured-runner  | pragma: no-cache
+rest-assured-runner  | report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=8L1Oc7Xlc9P29fSjwFuFy%2FPqHc%2Bbjg5WnK5INKVrFks%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1767880990"}],"max_age":3600}
+rest-assured-runner  | reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=8L1Oc7Xlc9P29fSjwFuFy%2FPqHc%2Bbjg5WnK5INKVrFks%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1767880990"
+rest-assured-runner  | Server: cloudflare
+rest-assured-runner  | vary: Origin, Accept-Encoding
+rest-assured-runner  | via: 2.0 heroku-router
+rest-assured-runner  | x-content-type-options: nosniff
+rest-assured-runner  | x-powered-by: Express
+rest-assured-runner  | x-ratelimit-limit: 1000
+rest-assured-runner  | x-ratelimit-remaining: 996
+rest-assured-runner  | x-ratelimit-reset: 1767881032
+rest-assured-runner  | cf-cache-status: DYNAMIC
+rest-assured-runner  | Content-Encoding: gzip
+rest-assured-runner  | CF-RAY: 9bac3c9e985ca793-EZE
+rest-assured-runner  | alt-svc: h3=":443"; ma=86400
+rest-assured-runner  |
+rest-assured-runner  | {
+rest-assured-runner  |     "name": "Francisco Updated",
+rest-assured-runner  |     "username": "fran_v2",
+rest-assured-runner  |     "email": "newemail@test.com",
+rest-assured-runner  |     "id": 1
+rest-assured-runner  | }
+rest-assured-runner  | HTTP/1.1 200 OK
+rest-assured-runner  | Date: Thu, 08 Jan 2026 14:03:10 GMT
+rest-assured-runner  | Content-Type: application/json; charset=utf-8
+rest-assured-runner  | Transfer-Encoding: chunked
+rest-assured-runner  | Connection: keep-alive
+rest-assured-runner  | access-control-allow-credentials: true
+rest-assured-runner  | Cache-Control: no-cache
+rest-assured-runner  | etag: W/"65-FQH463NtMGgvUFILRcfrJZWgYEw"
+rest-assured-runner  | expires: -1
+rest-assured-runner  | nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+rest-assured-runner  | pragma: no-cache
+rest-assured-runner  | report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=8L1Oc7Xlc9P29fSjwFuFy%2FPqHc%2Bbjg5WnK5INKVrFks%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1767880990"}],"max_age":3600}
+rest-assured-runner  | reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=8L1Oc7Xlc9P29fSjwFuFy%2FPqHc%2Bbjg5WnK5INKVrFks%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1767880990"
+rest-assured-runner  | Server: cloudflare
+rest-assured-runner  | vary: Origin, Accept-Encoding
+rest-assured-runner  | via: 2.0 heroku-router
+rest-assured-runner  | x-content-type-options: nosniff
+rest-assured-runner  | x-powered-by: Express
+rest-assured-runner  | x-ratelimit-limit: 1000
+rest-assured-runner  | x-ratelimit-remaining: 996
+rest-assured-runner  | x-ratelimit-reset: 1767881032
+rest-assured-runner  | cf-cache-status: DYNAMIC
+rest-assured-runner  | Content-Encoding: gzip
+rest-assured-runner  | CF-RAY: 9bac3c9e985ca793-EZE
+rest-assured-runner  | alt-svc: h3=":443"; ma=86400
+rest-assured-runner  |
+rest-assured-runner  | {
+rest-assured-runner  |     "name": "Francisco Updated",
+rest-assured-runner  |     "username": "fran_v2",
+rest-assured-runner  |     "email": "newemail@test.com",
+rest-assured-runner  |     "id": 1
+rest-assured-runner  | }
+rest-assured-runner  | HTTP/1.1 200 OK
+rest-assured-runner  | Date: Thu, 08 Jan 2026 14:03:10 GMT
+rest-assured-runner  | Content-Type: application/json; charset=utf-8
+rest-assured-runner  | Transfer-Encoding: chunked
+rest-assured-runner  | Connection: keep-alive
+rest-assured-runner  | access-control-allow-credentials: true
+rest-assured-runner  | Cache-Control: no-cache
+rest-assured-runner  | etag: W/"65-FQH463NtMGgvUFILRcfrJZWgYEw"
+rest-assured-runner  | expires: -1
+rest-assured-runner  | nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+rest-assured-runner  | pragma: no-cache
+rest-assured-runner  | report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=8L1Oc7Xlc9P29fSjwFuFy%2FPqHc%2Bbjg5WnK5INKVrFks%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1767880990"}],"max_age":3600}
+rest-assured-runner  | reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=8L1Oc7Xlc9P29fSjwFuFy%2FPqHc%2Bbjg5WnK5INKVrFks%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1767880990"
+rest-assured-runner  | Server: cloudflare
+rest-assured-runner  | vary: Origin, Accept-Encoding
+rest-assured-runner  | via: 2.0 heroku-router
+rest-assured-runner  | x-content-type-options: nosniff
+rest-assured-runner  | x-powered-by: Express
+rest-assured-runner  | x-ratelimit-limit: 1000
+rest-assured-runner  | x-ratelimit-remaining: 996
+rest-assured-runner  | x-ratelimit-reset: 1767881032
+rest-assured-runner  | cf-cache-status: DYNAMIC
+rest-assured-runner  | Content-Encoding: gzip
+rest-assured-runner  | CF-RAY: 9bac3c9e985ca793-EZE
+rest-assured-runner  | alt-svc: h3=":443"; ma=86400
+rest-assured-runner  |
+rest-assured-runner  | {
+rest-assured-runner  |     "name": "Francisco Updated",
+rest-assured-runner  |     "username": "fran_v2",
+rest-assured-runner  |     "email": "newemail@test.com",
+rest-assured-runner  |     "id": 1
+rest-assured-runner  | }
+rest-assured-runner  | [INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.29 s -- in TestSuite
+rest-assured-runner  | [INFO]
+rest-assured-runner  | [INFO] Results:
+rest-assured-runner  | [INFO]
+rest-assured-runner  | [INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+rest-assured-runner  | [INFO]
+rest-assured-runner  | [INFO]
+rest-assured-runner  | [INFO] --- allure:2.12.0:report (default-cli) @ ReqResApiAutomation ---
+rest-assured-runner  | [INFO] Allure installation directory /app/.allure
+rest-assured-runner  | [INFO] Try to finding out allure 2.25.0
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.25.0/allure-commandline-2.25.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.25.0/allure-commandline-2.25.0.pom (7.9 kB at 114 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/io/qameta/allure/allure-bom/2.24.0/allure-bom-2.24.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/io/qameta/allure/allure-bom/2.24.0/allure-bom-2.24.0.pom (8.5 kB at 127 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.1/junit-bom-5.10.1.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.1/junit-bom-5.10.1.pom (5.6 kB at 86 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.16.0/jackson-bom-2.16.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.16.0/jackson-bom-2.16.0.pom (18 kB at 289 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-parent/2.16/jackson-parent-2.16.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-parent/2.16/jackson-parent-2.16.pom (6.5 kB at 102 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/56/oss-parent-56.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/56/oss-parent-56.pom (24 kB at 393 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.3.11/logback-classic-1.3.11.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.3.11/logback-classic-1.3.11.pom (13 kB at 227 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-parent/1.3.11/logback-parent-1.3.11.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-parent/1.3.11/logback-parent-1.3.11.pom (21 kB at 257 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.3.11/logback-core-1.3.11.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.3.11/logback-core-1.3.11.pom (5.2 kB at 65 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.pom (2.7 kB at 46 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/2.0.7/slf4j-parent-2.0.7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/2.0.7/slf4j-parent-2.0.7.pom (17 kB at 180 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.16.0/jackson-databind-2.16.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.16.0/jackson-databind-2.16.0.pom (21 kB at 445 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-base/2.16.0/jackson-base-2.16.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-base/2.16.0/jackson-base-2.16.0.pom (11 kB at 186 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.16.0/jackson-annotations-2.16.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.16.0/jackson-annotations-2.16.0.pom (7.1 kB at 126 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.16.0/jackson-core-2.16.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.16.0/jackson-core-2.16.0.pom (9.9 kB at 186 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.16.0/jackson-dataformat-yaml-2.16.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.16.0/jackson-dataformat-yaml-2.16.0.pom (2.6 kB at 43 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformats-text/2.16.0/jackson-dataformats-text-2.16.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformats-text/2.16.0/jackson-dataformats-text-2.16.0.pom (3.5 kB at 56 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.15.1/commons-io-2.15.1.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.15.1/commons-io-2.15.1.pom (20 kB at 425 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/65/commons-parent-65.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/65/commons-parent-65.pom (78 kB at 1.1 MB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-server/9.4.53.v20231009/jetty-server-9.4.53.v20231009.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-server/9.4.53.v20231009/jetty-server-9.4.53.v20231009.pom (3.4 kB at 46 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-project/9.4.53.v20231009/jetty-project-9.4.53.v20231009.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-project/9.4.53.v20231009/jetty-project-9.4.53.v20231009.pom (73 kB at 1.2 MB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-bom/11.0.17.Final/infinispan-bom-11.0.17.Final.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-bom/11.0.17.Final/infinispan-bom-11.0.17.Final.pom (18 kB at 340 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-build-configuration-parent/11.0.17.Final/infinispan-build-configuration-parent-11.0.17.Final.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-build-configuration-parent/11.0.17.Final/infinispan-build-configuration-parent-11.0.17.Final.pom (16 kB at 299 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-http/9.4.53.v20231009/jetty-http-9.4.53.v20231009.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-http/9.4.53.v20231009/jetty-http-9.4.53.v20231009.pom (4.0 kB at 68 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-util/9.4.53.v20231009/jetty-util-9.4.53.v20231009.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-util/9.4.53.v20231009/jetty-util-9.4.53.v20231009.pom (4.0 kB at 76 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-io/9.4.53.v20231009/jetty-io-9.4.53.v20231009.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-io/9.4.53.v20231009/jetty-io-9.4.53.v20231009.pom (1.2 kB at 23 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/io/qameta/allure/allure-generator/2.25.0/allure-generator-2.25.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/io/qameta/allure/allure-generator/2.25.0/allure-generator-2.25.0.pom (8.6 kB at 137 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/io/qameta/allure/allure-plugin-api/2.25.0/allure-plugin-api-2.25.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/io/qameta/allure/allure-plugin-api/2.25.0/allure-plugin-api-2.25.0.pom (8.0 kB at 157 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.16.0/jackson-module-jaxb-annotations-2.16.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.16.0/jackson-module-jaxb-annotations-2.16.0.pom (3.8 kB at 74 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-modules-base/2.16.0/jackson-modules-base-2.16.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-modules-base/2.16.0/jackson-modules-base-2.16.0.pom (4.1 kB at 91 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.pom (13 kB at 268 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api-parent/2.3.3/jakarta.xml.bind-api-parent-2.3.3.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api-parent/2.3.3/jakarta.xml.bind-api-parent-2.3.3.pom (9.0 kB at 176 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.pom (5.3 kB at 87 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/sun/activation/all/1.2.2/all-1.2.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/activation/all/1.2.2/all-1.2.2.pom (15 kB at 323 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/opencsv/opencsv/4.6/opencsv-4.6.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/opencsv/opencsv/4.6/opencsv-4.6.pom (23 kB at 357 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.pom (15 kB at 311 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/41/commons-parent-41.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/41/commons-parent-41.pom (65 kB at 772 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark/0.62.2/flexmark-0.62.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark/0.62.2/flexmark-0.62.2.pom (4.1 kB at 75 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-java/0.62.2/flexmark-java-0.62.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-java/0.62.2/flexmark-java-0.62.2.pom (24 kB at 358 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-ast/0.62.2/flexmark-util-ast-0.62.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-ast/0.62.2/flexmark-util-ast-0.62.2.pom (2.0 kB at 34 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-collection/0.62.2/flexmark-util-collection-0.62.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-collection/0.62.2/flexmark-util-collection-0.62.2.pom (1.1 kB at 23 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-misc/0.62.2/flexmark-util-misc-0.62.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-misc/0.62.2/flexmark-util-misc-0.62.2.pom (979 B at 15 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/jetbrains/annotations/15.0/annotations-15.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jetbrains/annotations/15.0/annotations-15.0.pom (5.5 kB at 106 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-data/0.62.2/flexmark-util-data-0.62.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-data/0.62.2/flexmark-util-data-0.62.2.pom (1.2 kB at 21 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-sequence/0.62.2/flexmark-util-sequence-0.62.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-sequence/0.62.2/flexmark-util-sequence-0.62.2.pom (1.4 kB at 20 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-visitor/0.62.2/flexmark-util-visitor-0.62.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-visitor/0.62.2/flexmark-util-visitor-0.62.2.pom (988 B at 20 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-builder/0.62.2/flexmark-util-builder-0.62.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-builder/0.62.2/flexmark-util-builder-0.62.2.pom (1.3 kB at 17 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-dependency/0.62.2/flexmark-util-dependency-0.62.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-dependency/0.62.2/flexmark-util-dependency-0.62.2.pom (1.5 kB at 29 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-format/0.62.2/flexmark-util-format-0.62.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-format/0.62.2/flexmark-util-format-0.62.2.pom (2.2 kB at 42 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-html/0.62.2/flexmark-util-html-0.62.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-html/0.62.2/flexmark-util-html-0.62.2.pom (1.3 kB at 29 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.62.2/flexmark-ext-tables-0.62.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.62.2/flexmark-ext-tables-0.62.2.pom (1.6 kB at 30 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util/0.62.2/flexmark-util-0.62.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util/0.62.2/flexmark-util-0.62.2.pom (3.9 kB at 81 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-options/0.62.2/flexmark-util-options-0.62.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-options/0.62.2/flexmark-util-options-0.62.2.pom (1.3 kB at 17 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.pom (3.3 kB at 55 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.16.0/jackson-dataformat-xml-2.16.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.16.0/jackson-dataformat-xml-2.16.0.pom (7.3 kB at 129 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/woodstox/stax2-api/4.2.1/stax2-api-4.2.1.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/woodstox/stax2-api/4.2.1/stax2-api-4.2.1.pom (6.3 kB at 137 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/38/oss-parent-38.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/38/oss-parent-38.pom (23 kB at 470 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/woodstox/woodstox-core/6.5.1/woodstox-core-6.5.1.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/woodstox/woodstox-core/6.5.1/woodstox-core-6.5.1.pom (9.6 kB at 148 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/io/qameta/allure/allure-model/2.24.0/allure-model-2.24.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/io/qameta/allure/allure-model/2.24.0/allure-model-2.24.0.pom (1.4 kB at 25 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/allurefw/allure1-model/1.0/allure1-model-1.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/allurefw/allure1-model/1.0/allure1-model-1.0.pom (5.2 kB at 83 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/ru/qatools/opensource-parent/1.2/opensource-parent-1.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/ru/qatools/opensource-parent/1.2/opensource-parent-1.2.pom (8.3 kB at 162 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/ru/qatools/commons/properties/2.0.RC5/properties-2.0.RC5.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/ru/qatools/commons/properties/2.0.RC5/properties-2.0.RC5.pom (4.1 kB at 78 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.pom (2.8 kB at 49 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.21/slf4j-parent-1.7.21.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.21/slf4j-parent-1.7.21.pom (14 kB at 281 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/github/baev/jaxb-utils/1.0/jaxb-utils-1.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/github/baev/jaxb-utils/1.0/jaxb-utils-1.0.pom (2.0 kB at 42 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.pom (6.6 kB at 127 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.5.14/httpcomponents-client-4.5.14.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.5.14/httpcomponents-client-4.5.14.pom (15 kB at 318 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.pom (5.0 kB at 127 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.4.16/httpcomponents-core-4.4.16.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.4.16/httpcomponents-core-4.4.16.pom (12 kB at 284 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/tika/tika-core/2.9.1/tika-core-2.9.1.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/tika/tika-core/2.9.1/tika-core-2.9.1.pom (11 kB at 219 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/tika/tika-parent/2.9.1/tika-parent-2.9.1.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/tika/tika-parent/2.9.1/tika-parent-2.9.1.pom (48 kB at 978 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/io/netty/netty-bom/4.1.100.Final/netty-bom-4.1.100.Final.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/io/netty/netty-bom/4.1.100.Final/netty-bom-4.1.100.Final.pom (13 kB at 241 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/cxf/cxf-bom/3.5.6/cxf-bom-3.5.6.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/cxf/cxf-bom/3.5.6/cxf-bom-3.5.6.pom (26 kB at 216 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/cxf/cxf/3.5.6/cxf-3.5.6.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/cxf/cxf/3.5.6/cxf-3.5.6.pom (39 kB at 732 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-bom/2.20.0/log4j-bom-2.20.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-bom/2.20.0/log4j-bom-2.20.0.pom (9.0 kB at 127 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/logging/logging-parent/7/logging-parent-7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/logging/logging-parent/7/logging-parent-7.pom (3.3 kB at 75 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-bom/9.4.53.v20231009/jetty-bom-9.4.53.v20231009.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-bom/9.4.53.v20231009/jetty-bom-9.4.53.v20231009.pom (18 kB at 285 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/testcontainers/testcontainers-bom/1.19.1/testcontainers-bom-1.19.1.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/testcontainers/testcontainers-bom/1.19.1/testcontainers-bom-1.19.1.pom (8.8 kB at 115 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.14.0/commons-io-2.14.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.14.0/commons-io-2.14.0.pom (20 kB at 432 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/62/commons-parent-62.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/62/commons-parent-62.pom (81 kB at 1.6 MB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.25.0/allure-commandline-2.25.0.zip
+Downloaded from central: https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.25.0/allure-commandline-2.25.0.zip (21 MB at 13 MB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.3.11/logback-classic-1.3.11.jar
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.3.11/logback-core-1.3.11.jar
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.16.0/jackson-databind-2.16.0.jar
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.16.0/jackson-annotations-2.16.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar (64 kB at 549 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.16.0/jackson-core-2.16.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.3.11/logback-classic-1.3.11.jar (277 kB at 1.6 MB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.16.0/jackson-dataformat-yaml-2.16.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.3.11/logback-core-1.3.11.jar (580 kB at 3.1 MB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.16.0/jackson-dataformat-yaml-2.16.0.jar (55 kB at 238 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-server/9.4.53.v20231009/jetty-server-9.4.53.v20231009.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.16.0/jackson-core-2.16.0.jar (579 kB at 2.1 MB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.16.0/jackson-annotations-2.16.0.jar (78 kB at 278 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-http/9.4.53.v20231009/jetty-http-9.4.53.v20231009.jar
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-util/9.4.53.v20231009/jetty-util-9.4.53.v20231009.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar (501 kB at 1.6 MB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-io/9.4.53.v20231009/jetty-io-9.4.53.v20231009.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-io/9.4.53.v20231009/jetty-io-9.4.53.v20231009.jar (183 kB at 429 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/io/qameta/allure/allure-generator/2.25.0/allure-generator-2.25.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-server/9.4.53.v20231009/jetty-server-9.4.53.v20231009.jar (737 kB at 1.7 MB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/io/qameta/allure/allure-plugin-api/2.25.0/allure-plugin-api-2.25.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-http/9.4.53.v20231009/jetty-http-9.4.53.v20231009.jar (249 kB at 547 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/opencsv/opencsv/4.6/opencsv-4.6.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-util/9.4.53.v20231009/jetty-util-9.4.53.v20231009.jar (589 kB at 1.2 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/io/qameta/allure/allure-plugin-api/2.25.0/allure-plugin-api-2.25.0.jar (107 kB at 201 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark/0.62.2/flexmark-0.62.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.16.0/jackson-databind-2.16.0.jar (1.6 MB at 2.9 MB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-ast/0.62.2/flexmark-util-ast-0.62.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar (246 kB at 415 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/jetbrains/annotations/15.0/annotations-15.0.jar
+rest-assured-runner  | Downloaded from central: https://repo.maven.apache.org/maven2/com/opencsv/opencsv/4.6/opencsv-4.6.jar (170 kB at 287 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-builder/0.62.2/flexmark-util-builder-0.62.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-ast/0.62.2/flexmark-util-ast-0.62.2.jar (65 kB at 107 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-collection/0.62.2/flexmark-util-collection-0.62.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/io/qameta/allure/allure-generator/2.25.0/allure-generator-2.25.0.jar (1.2 MB at 1.9 MB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-data/0.62.2/flexmark-util-data-0.62.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-builder/0.62.2/flexmark-util-builder-0.62.2.jar (5.3 kB at 8.1 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-dependency/0.62.2/flexmark-util-dependency-0.62.2.jar
+rest-assured-runner  | Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark/0.62.2/flexmark-0.62.2.jar (444 kB at 682 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-format/0.62.2/flexmark-util-format-0.62.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-collection/0.62.2/flexmark-util-collection-0.62.2.jar (67 kB at 99 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-html/0.62.2/flexmark-util-html-0.62.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-data/0.62.2/flexmark-util-data-0.62.2.jar (25 kB at 37 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-misc/0.62.2/flexmark-util-misc-0.62.2.jar
+rest-assured-runner  | Downloaded from central: https://repo.maven.apache.org/maven2/org/jetbrains/annotations/15.0/annotations-15.0.jar (19 kB at 27 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-sequence/0.62.2/flexmark-util-sequence-0.62.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-dependency/0.62.2/flexmark-util-dependency-0.62.2.jar (16 kB at 24 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-visitor/0.62.2/flexmark-util-visitor-0.62.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-format/0.62.2/flexmark-util-format-0.62.2.jar (109 kB at 153 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.62.2/flexmark-ext-tables-0.62.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-visitor/0.62.2/flexmark-util-visitor-0.62.2.jar (6.8 kB at 9.0 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util/0.62.2/flexmark-util-0.62.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-html/0.62.2/flexmark-util-html-0.62.2.jar (55 kB at 72 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-options/0.62.2/flexmark-util-options-0.62.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-sequence/0.62.2/flexmark-util-sequence-0.62.2.jar (223 kB at 289 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.16.0/jackson-dataformat-xml-2.16.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-misc/0.62.2/flexmark-util-misc-0.62.2.jar (59 kB at 76 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/woodstox/stax2-api/4.2.1/stax2-api-4.2.1.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.62.2/flexmark-ext-tables-0.62.2.jar (47 kB at 60 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/woodstox/woodstox-core/6.5.1/woodstox-core-6.5.1.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util/0.62.2/flexmark-util-0.62.2.jar (1.9 kB at 2.4 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.16.0/jackson-module-jaxb-annotations-2.16.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-options/0.62.2/flexmark-util-options-0.62.2.jar (12 kB at 15 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.16.0/jackson-module-jaxb-annotations-2.16.0.jar (37 kB at 42 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.16.0/jackson-dataformat-xml-2.16.0.jar (127 kB at 139 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/io/qameta/allure/allure-model/2.24.0/allure-model-2.24.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/woodstox/stax2-api/4.2.1/stax2-api-4.2.1.jar (196 kB at 214 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/allurefw/allure1-model/1.0/allure1-model-1.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar (116 kB at 124 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/ru/qatools/commons/properties/2.0.RC5/properties-2.0.RC5.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar (47 kB at 49 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/com/github/baev/jaxb-utils/1.0/jaxb-utils-1.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/allurefw/allure1-model/1.0/allure1-model-1.0.jar (36 kB at 37 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar
+rest-assured-runner  | Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/woodstox/woodstox-core/6.5.1/woodstox-core-6.5.1.jar (1.6 MB at 1.6 MB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/io/qameta/allure/allure-model/2.24.0/allure-model-2.24.0.jar (18 kB at 18 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/tika/tika-core/2.9.1/tika-core-2.9.1.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/ru/qatools/commons/properties/2.0.RC5/properties-2.0.RC5.jar (38 kB at 38 kB/s)
+rest-assured-runner  | Downloading from central: https://repo.maven.apache.org/maven2/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/com/github/baev/jaxb-utils/1.0/jaxb-utils-1.0.jar (4.7 kB at 4.6 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar (786 kB at 712 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar (328 kB at 279 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/tika/tika-core/2.9.1/tika-core-2.9.1.jar (738 kB at 593 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar (1.7 MB at 1.4 MB/s)
+rest-assured-runner  | [INFO] Generate Allure report (report) with version 2.25.0
+rest-assured-runner  | [INFO] Generate Allure report to /app/target/site/allure-maven-plugin
+rest-assured-runner  | [INFO] Found results directory /app/target/allure-results
+rest-assured-runner  | [INFO] Can't find information about categories
+rest-assured-runner  | [INFO] Generate report to /app/target/site/allure-maven-plugin
+rest-assured-runner  | Report successfully generated to /app/target/site/allure-maven-plugin
+rest-assured-runner  | [INFO] Report generated successfully.
+rest-assured-runner  | [INFO] ------------------------------------------------------------------------
+rest-assured-runner  | [INFO] BUILD SUCCESS
+rest-assured-runner  | [INFO] ------------------------------------------------------------------------
+rest-assured-runner  | [INFO] Total time:  37.821 s
+rest-assured-runner  | [INFO] Finished at: 2026-01-08T14:03:28Z
+rest-assured-runner  | [INFO] ------------------------------------------------------------------------
+rest-assured-runner exited with code 0

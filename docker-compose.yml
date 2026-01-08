@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  api-tests:
+    build: .
+    container_name: rest-assured-runner
+    volumes:
+      - ./target/site/allure-maven-plugin:/app/target/site/allure-maven-plugin
