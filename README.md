@@ -56,6 +56,8 @@ The suite covers **7 robust scenarios** across different API capabilities:
     ```bash
     mvn allure:serve
     ```
+## 📊 Test Report
+[View Latest Execution Report](https://francisco9403.github.io/RestAssuredAutomation/)
 
 ## cw Project Structure
 
