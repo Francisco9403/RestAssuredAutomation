@@ -59,6 +59,21 @@ The suite covers **7 robust scenarios** across different API capabilities:
 ## 📊 Test Report
 [View Latest Execution Report](https://francisco9403.github.io/RestAssuredAutomation/)
 
+
+## 🐳 Run with Docker (Zero Setup)
+
+You can execute the full test suite without installing Java or Maven locally. Just use Docker:
+
+1.  **Run tests & Generate Report:**
+    ```bash
+    docker-compose up --build
+    ```
+
+2.  **View Results:**
+    The Allure HTML report will be automatically generated in:
+    `target/site/allure-maven-plugin/index.html`
+
+
 ## cw Project Structure
 
 ```text
